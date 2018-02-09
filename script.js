@@ -121,7 +121,7 @@ setInterval(function(){
   ctx.clearRect(0,0,width,height)
   canvas.width = sizingVar*500
   canvas.height = sizingVar*500
-  /**
+  
   for(var i = 0; i<50;i++){
     for(var v = 0; i<50;v++){
       if(map1[i][v]==1){
@@ -129,7 +129,7 @@ setInterval(function(){
       }
     }
   }
-  **/
+  
   //ctx.fillRect(plrX*sizingVar, plrY*sizingVar, 10*sizingVar, 10*sizingVar)
   if(dir == "up" && animationFrameNo == 0 ){
   ctx.drawImage(linkUp1,plrX*sizingVar,plrY*sizingVar,10*sizingVar,10*sizingVar)
