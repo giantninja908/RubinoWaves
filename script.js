@@ -50,6 +50,8 @@ var map1 = [
   0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
   0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 ]
+var mapX = 0
+var mapY = 0
 var canvas = document.getElementById("canvas")
 var ctx = canvas.getContext("2d")
 var height = 0
@@ -74,14 +76,38 @@ var SK = false
 var sizingVar;
 var walking = false
 setInterval(function(){
+  
   time++
   height = window.innerHeight
   width = window.innerWidth
+  ctx.clearRect(0,0,width,height)
+  
   if(width<height){
     sizingVar = width/500
   }else{
     sizingVar = height/500
   }
+  canvas.width = sizingVar*500
+  canvas.height = sizingVar*500
+  for(var i = 0; i<map1.length;i++){
+      if(map1[i]==1){
+      ctx.fillRect(((i%50)-1)*10*sizingVar,Math.floor(i/50)*10*sizingVar,10*sizingVar,10*sizingVar)
+      }
+      if(plrX <= map1[i]%50+8 && plrX >= map1[i]%50-10 && plrY >= Math.floor(map1[i]/50)-10&& plrY <= Math.floor(map1[i])-5){
+      plrY = Math.floor(map1[i]/50)-10
+    }else{
+
+      if(plrX <= map1[i]%50-6 && plrX >= map1[i]%50-11 && plrY >= Math.floor(map1[i]/50)-5&& plrY <= Math.floor(map1[i]/50)){
+        plrX = map1[i]%50-11
+      }else if(plrX <= map1[i]%50-1+10 && plrX >= map1[i]%50-1+5 && plrY >= Math.floor(map1[i]/50)-5&& plrY <= Math.floor(map1[i]/50)){
+        plrX = map1[i]%50+9
+      }
+      
+      if(plrX <= map1[i]%50-1+5 && plrX >= map1[i]%50-1-5 && Math.floor(map1[i]/50)+10>= plrY&& Math.floor(map1[i]/50)+5<=plrY){
+        plrY = Math.floor(map1[i]/50)+10
+      }
+    }
+    }
   if(AK == true){
     plrX -= 2.5
     dir = "left"
@@ -118,15 +144,6 @@ setInterval(function(){
   }
   }
   //Sizing var would be for scaling on a 500x500 canvas, with it being the number to multiply by for pixels
-  ctx.clearRect(0,0,width,height)
-  canvas.width = sizingVar*500
-  canvas.height = sizingVar*500
-  
-  for(var i = 0; i<map1.length;i++){
-      if(map1[i]==1){
-      ctx.fillRect(((i%50)-1)*10*sizingVar,Math.floor(i/50)*10*sizingVar,10*sizingVar,10*sizingVar)
-      }
-    }
   //ctx.fillRect(plrX*sizingVar, plrY*sizingVar, 10*sizingVar, 10*sizingVar)
   if(dir == "up" && animationFrameNo == 0 ){
   ctx.drawImage(linkUp1,plrX*sizingVar,plrY*sizingVar,10*sizingVar,10*sizingVar)
