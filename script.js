@@ -95,6 +95,7 @@ setInterval(function(){
       }
       if(plrX <= map1[i]%50+8 && plrX >= map1[i]%50-10 && plrY >= Math.floor(map1[i]/50)-10&& plrY <= Math.floor(map1[i])-5){
       plrY = Math.floor(map1[i]/50)-10
+        alert("YUP!!")
     }else{
 
       if(plrX <= map1[i]%50-6 && plrX >= map1[i]%50-11 && plrY >= Math.floor(map1[i]/50)-5&& plrY <= Math.floor(map1[i]/50)){
