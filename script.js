@@ -122,9 +122,9 @@ setInterval(function(){
   canvas.width = sizingVar*500
   canvas.height = sizingVar*500
   
-  for(var i = 0; i<50;i++){
+  for(var i = 0; i<map1.length;i++){
       if(map1[i]==1){
-      ctx.fillRect((i%50)*10*sizingVar,Math.floor(i/50)*10*sizingVar,10*sizingVar,10*sizingVar)
+      ctx.fillRect(((i%50)-1)*10*sizingVar,Math.floor(i/50)*10*sizingVar,10*sizingVar,10*sizingVar)
       }
     }
   }
