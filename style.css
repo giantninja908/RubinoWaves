@@ -2,6 +2,11 @@ body,canvas{
   margin: 0;
   padding: 0;
 }
+
+img{
+  width:0;
+  padding:0;
+}
 body {
   animation-name: animation;
   animation-duration: 1s;
