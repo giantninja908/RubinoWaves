@@ -98,19 +98,19 @@ setInterval(function(){
   canvas.width = sizingVar*500
   canvas.height = sizingVar*500
   if(AK == true){
-    plrX -= 2.5
+    plrX -= 1.25
     dir = "left"
   }
   if(DK == true){
-    plrX += 2.5
+    plrX += 1.25
     dir = "right"
   }
   if(WK == true){
-    plrY -= 2.5
+    plrY -= 1.25
     dir = "up"
   }
   if(SK == true){
-    plrY += 2.5
+    plrY += 1.25
     dir = "down"
   }
   if(plrX < 0){
