@@ -50,6 +50,12 @@ var map1 = [
   0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
   0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 ]
+var blockX = []
+var blockY = []
+for(var i=0;i<map1.length;i++){
+  blockX[i]=i%50
+  blockY[i]=Math.floor(i/50)
+}
 var mapX = 0
 var mapY = 0
 var canvas = document.getElementById("canvas")
@@ -92,22 +98,21 @@ setInterval(function(){
   for(var i = 0; i<map1.length;i++){
       if(map1[i]==1){
       ctx.fillRect(((i%50))*10*sizingVar,Math.floor(i/50)*10*sizingVar,10*sizingVar,10*sizingVar)
-        if(plrX <= i%50+9 && plrX >= i%50-9 && plrY >= Math.floor(i/50)-10&& plrY <= Math.floor(i/50)-5){
-      plrY = Math.floor(i/50)-10
+        if(plrX <= blockX[i]+9 && plrX >= blockX[i]-9 && plrY >= blockY[i]-10&& plrY <= blockY[i]-5){
+      plrY = blockY[i]-10
     }else{
 
-      if(plrX <= i%50-5 && plrX >= i%50-10 && plrY >= Math.floor(i/50)-5&& plrY <= Math.floor(i/50)){
-        plrX = i%50-10
-      }else if(plrX <= i%50+10 && plrX >= i%50+5 && plrY >= Math.floor(i/50)-5&& plrY <= Math.floor(i/50)){
-        plrX = i%50+10
+      if(plrX <= blockX[i]-5 && plrX >= blockX[i]-10 && plrY >= blockY[i]-5&& plrY <= blockY[i]){
+        plrX = blockX[i]-10
+      }else if(plrX <= blockX[i]+10 && plrX >= blockX[i]+5 && plrY >= blockY[i]-5&& plrY <= blockY[i]){
+        plrX = blockX[i]+10
+      }else{
       }
-      
-      if(plrX <= i%50+5 && plrX >= i%50-5 && Math.floor(i/50)+10>= plrY&& Math.floor(i/50)+5<=plrY){
-        plrY = Math.floor(i/50)+10
+      if(plrX <= blockX[i]+5 && plrX >= blockX[i]-5 && blockY[i]+10>= plrY&& blockY[i]+5<=plrY){
+        plrY = blockY[i]+10
       }
-    }
       }
-      
+      }
     }
   if(AK == true){
     plrX -= 2.5
