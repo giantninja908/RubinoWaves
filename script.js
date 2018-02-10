@@ -91,18 +91,18 @@ setInterval(function(){
   canvas.height = sizingVar*500
   for(var i = 0; i<map1.length;i++){
       if(map1[i]==1){
-      ctx.fillRect(((i%50)-1)*10*sizingVar,Math.floor(i/50)*10*sizingVar,10*sizingVar,10*sizingVar)
-        if(plrX <= i%50+8 && plrX >= i%50-10 && plrY >= Math.floor(i/50)-10&& plrY <= Math.floor(i)-5){
+      ctx.fillRect(((i%50))*10*sizingVar,Math.floor(i/50)*10*sizingVar,10*sizingVar,10*sizingVar)
+        if(plrX <= i%50+9 && plrX >= i%50-9 && plrY >= Math.floor(i/50)-10&& plrY <= Math.floor(i/50)-5){
       plrY = Math.floor(i/50)-10
     }else{
 
-      if(plrX <= i%50-6 && plrX >= i%50-11 && plrY >= Math.floor(i/50)-5&& plrY <= Math.floor(i/50)){
-        plrX = i%50-11
-      }else if(plrX <= i%50-1+10 && plrX >= i%50-1+5 && plrY >= Math.floor(i/50)-5&& plrY <= Math.floor(i/50)){
-        plrX = i%50+9
+      if(plrX <= i%50-5 && plrX >= i%50-10 && plrY >= Math.floor(i/50)-5&& plrY <= Math.floor(i/50)){
+        plrX = i%50-10
+      }else if(plrX <= i%50+10 && plrX >= i%50+5 && plrY >= Math.floor(i/50)-5&& plrY <= Math.floor(i/50)){
+        plrX = i%50+10
       }
       
-      if(plrX <= i%50-1+5 && plrX >= i%50-1-5 && Math.floor(i/50)+10>= plrY&& Math.floor(i/50)+5<=plrY){
+      if(plrX <= i%50+5 && plrX >= i%50-5 && Math.floor(i/50)+10>= plrY&& Math.floor(i/50)+5<=plrY){
         plrY = Math.floor(i/50)+10
       }
     }
