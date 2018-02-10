@@ -125,6 +125,26 @@ setInterval(function(){
   if(plrY > 490){
     plrY = 490
   }
+  
+  for(var i = 0; i<map1.length;i++){
+      if(map1[i]==1){
+      ctx.fillRect(((i%50))*10*sizingVar,Math.floor(i/50)*10*sizingVar,10*sizingVar,10*sizingVar)
+        if(plrX <= blockX[i]*10+9 && plrX >= blockX[i]*10-9 && plrY >= blockY[i]*10-10&& plrY <= blockY[i]*10-5){
+      plrY = blockY[i]*10-10
+    }else{
+
+      if(plrX <= blockX[i]*10-5 && plrX >= blockX[i]*10-10 && plrY >= blockY[i]*10-5&& plrY <= blockY[i]*10){
+        plrX = blockX[i]*10-10
+      }else if(plrX <= blockX[i]*10+10 && plrX >= blockX[i]*10+5 && plrY >= blockY[i]*10-5&& plrY <= blockY[i]*10){
+        plrX = blockX[i]*10+10
+      }else{
+      }
+      if(plrX <= blockX[i]*10+5 && plrX >= blockX[i]*10-5 && blockY[i]*10+10>= plrY&& blockY[i]*10+5<=plrY){
+        plrY = blockY[i]*10+10
+      }
+      }
+      }
+    }
   if(dir == "up" && animationFrameNo == 0 ){
   ctx.drawImage(linkUp1,plrX*sizingVar,plrY*sizingVar,10*sizingVar,10*sizingVar)
   }
@@ -149,26 +169,6 @@ setInterval(function(){
   if(dir == "right" && animationFrameNo == 1 ){
   ctx.drawImage(linkRight2,plrX*sizingVar,plrY*sizingVar,10*sizingVar,10*sizingVar)
   }
-  for(var i = 0; i<map1.length;i++){
-      if(map1[i]==1){
-      ctx.fillRect(((i%50))*10*sizingVar,Math.floor(i/50)*10*sizingVar,10*sizingVar,10*sizingVar)
-        if(plrX <= blockX[i]*10+9 && plrX >= blockX[i]*10-9 && plrY >= blockY[i]*10-10&& plrY <= blockY[i]*10-5){
-      plrY = blockY[i]*10-10
-    }else{
-
-      if(plrX <= blockX[i]*10-5 && plrX >= blockX[i]*10-10 && plrY >= blockY[i]*10-5&& plrY <= blockY[i]*10){
-        plrX = blockX[i]*10-10
-      }else if(plrX <= blockX[i]*10+10 && plrX >= blockX[i]*10+5 && plrY >= blockY[i]*10-5&& plrY <= blockY[i]*10){
-        plrX = blockX[i]*10+10
-      }else{
-      }
-      if(plrX <= blockX[i]*10+5 && plrX >= blockX[i]*10-5 && blockY[i]*10+10>= plrY&& blockY[i]*10+5<=plrY){
-        plrY = blockY[i]*10+10
-      }
-      }
-      }
-    }
-  
   if(time%10 == 0 && walking == true){
   if(animationFrameNo == 0){
     animationFrameNo = 1
