@@ -128,6 +128,8 @@ setInterval(function(){
   for(var i = 0; i<map1.length;i++){
       if(map1[i]==1){
       ctx.fillRect(((i%50))*10*sizingVar,Math.floor(i/50)*10*sizingVar,10*sizingVar,10*sizingVar)
+        ctx.font = '8px Press Start 2P'
+        ctx.fillText("tutorial",i%50*10*sizingVar-5,Math.floor(i/50)*10*sizingVar-10)
         if(plrX <= blockX[i]*10+9 && plrX >= blockX[i]*10-9 && plrY >= blockY[i]*10-10&& plrY <= blockY[i]*10-5){
       plrY = blockY[i]*10-10
     }else{
@@ -136,15 +138,24 @@ setInterval(function(){
         plrX = blockX[i]*10-10
       }else if(plrX <= blockX[i]*10+10 && plrX >= blockX[i]*10+5 && plrY >= blockY[i]*10-5&& plrY <= blockY[i]*10){
         plrX = blockX[i]*10+10
-      }else{
-      }
-      if(plrX <= blockX[i]*10+5 && plrX >= blockX[i]*10-5 && blockY[i]*10+10>= plrY&& blockY[i]*10+5<=plrY){
+      }else if(plrX <= blockX[i]*10+5 && plrX >= blockX[i]*10-5 && blockY[i]*10+10>= plrY&& blockY[i]*10+5<=plrY){
         plrY = blockY[i]*10+10
       }
       }
       }
     if(map1[i] == 2){
       ctx.drawImage(oldMan,i%50*10*sizingVar,Math.floor(i/50)*10*sizingVar,10*sizingVar,10*sizingVar)
+      if(plrX <= blockX[i]*10+9 && plrX >= blockX[i]*10-9 && plrY >= blockY[i]*10-10&& plrY <= blockY[i]*10-5){
+      //tutorial
+    }else{
+      if(plrX <= blockX[i]*10-5 && plrX >= blockX[i]*10-10 && plrY >= blockY[i]*10-5&& plrY <= blockY[i]*10){
+        //tutorial
+      }else if(plrX <= blockX[i]*10+10 && plrX >= blockX[i]*10+5 && plrY >= blockY[i]*10-5&& plrY <= blockY[i]*10){
+        //tutorial
+      }else if(plrX <= blockX[i]*10+5 && plrX >= blockX[i]*10-5 && blockY[i]*10+10>= plrY&& blockY[i]*10+5<=plrY){
+        //tutorial
+      }
+      }
     }
     }
   if(dir == "up" && animationFrameNo == 0 ){
