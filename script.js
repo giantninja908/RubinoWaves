@@ -119,7 +119,8 @@ function tutorial(){
   DK = false
   if(map1 == m1){
     alert("Your objective is to get the 3 different types of CONES\nOnce you get them you can finally unlock the OMEGA ROD\nTo move use the arrow keys or WASD, to see the bibliography, press the B key, thank you!\n\nStart you quest with this first easy mini boss to get you started, there will be a little tutoiral within that, so please, take your time, and feel free to explore the realm of the RETINA!!\n\n\n\n\nPlease learn something")
-    
+    plrX = 0
+    plrY = 0
   map1=m2
   }else{
     alert("that's the tutorial, good luck!")
@@ -155,6 +156,7 @@ var linkLeft2 = document.getElementById("linkLeft2")
 var linkRight1 = document.getElementById("linkRight1")
 var linkRight2 = document.getElementById("linkRight2")
 var oldMan = document.getElementById("oldMan")
+//var boss = document.getElementById("boss")
 var SK = false
 var sizingVar;
 var walking = false
