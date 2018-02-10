@@ -100,18 +100,18 @@ setInterval(function(){
   for(var i = 0; i<map1.length;i++){
       if(map1[i]==1){
       ctx.fillRect(((i%50))*10*sizingVar,Math.floor(i/50)*10*sizingVar,10*sizingVar,10*sizingVar)
-        if(plrX <= blockX[i]+9 && plrX >= blockX[i]-9 && plrY >= blockY[i]-10&& plrY <= blockY[i]-5){
-      plrY = blockY[i]-10
+        if(plrX <= blockX[i]*10+9 && plrX >= blockX[i]*10-9 && plrY >= blockY[i]*10-10&& plrY <= blockY[i]*10-5){
+      plrY = blockY[i]*10-10
     }else{
 
-      if(plrX <= blockX[i]-5 && plrX >= blockX[i]-10 && plrY >= blockY[i]-5&& plrY <= blockY[i]){
-        plrX = blockX[i]-10
-      }else if(plrX <= blockX[i]+10 && plrX >= blockX[i]+5 && plrY >= blockY[i]-5&& plrY <= blockY[i]){
-        plrX = blockX[i]+10
+      if(plrX <= blockX[i]*10-5 && plrX >= blockX[i]*10-10 && plrY >= blockY[i]*10-5&& plrY <= blockY[i]*10){
+        plrX = blockX[i]*10-10
+      }else if(plrX <= blockX[i]*10+10 && plrX >= blockX[i]*10+5 && plrY >= blockY[i]*10-5&& plrY <= blockY[i]*10){
+        plrX = blockX[i]*10+10
       }else{
       }
-      if(plrX <= blockX[i]+5 && plrX >= blockX[i]-5 && blockY[i]+10>= plrY&& blockY[i]+5<=plrY){
-        plrY = blockY[i]+10
+      if(plrX <= blockX[i]*10+5 && plrX >= blockX[i]*10-5 && blockY[i]*10+10>= plrY&& blockY[i]*10+5<=plrY){
+        plrY = blockY[i]*10+10
       }
       }
       }
