@@ -56,6 +56,8 @@ for(var i=0;i<map1.length;i++){
   blockX[i]=i%50
   blockY[i]=Math.floor(i/50)
 }
+alert(blockX)
+alert(blockY)
 var mapX = 0
 var mapY = 0
 var canvas = document.getElementById("canvas")
