@@ -97,6 +97,34 @@ setInterval(function(){
   }
   canvas.width = sizingVar*500
   canvas.height = sizingVar*500
+  if(AK == true){
+    plrX -= 2.5
+    dir = "left"
+  }
+  if(DK == true){
+    plrX += 2.5
+    dir = "right"
+  }
+  if(WK == true){
+    plrY -= 2.5
+    dir = "up"
+  }
+  if(SK == true){
+    plrY += 2.5
+    dir = "down"
+  }
+  if(plrX < 0){
+    plrX = 0
+  }
+  if(plrX > 490){
+    plrX = 490
+  }
+  if(plrY < 0){
+    plrY = 0
+  }
+  if(plrY > 490){
+    plrY = 490
+  }
   if(dir == "up" && animationFrameNo == 0 ){
   ctx.drawImage(linkUp1,plrX*sizingVar,plrY*sizingVar,10*sizingVar,10*sizingVar)
   }
@@ -140,34 +168,7 @@ setInterval(function(){
       }
       }
     }
-  if(AK == true){
-    plrX -= 2.5
-    dir = "left"
-  }
-  if(DK == true){
-    plrX += 2.5
-    dir = "right"
-  }
-  if(WK == true){
-    plrY -= 2.5
-    dir = "up"
-  }
-  if(SK == true){
-    plrY += 2.5
-    dir = "down"
-  }
-  if(plrX < 0){
-    plrX = 0
-  }
-  if(plrX > 490){
-    plrX = 490
-  }
-  if(plrY < 0){
-    plrY = 0
-  }
-  if(plrY > 490){
-    plrY = 490
-  }
+  
   if(time%10 == 0 && walking == true){
   if(animationFrameNo == 0){
     animationFrameNo = 1
