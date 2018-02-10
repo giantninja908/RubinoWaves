@@ -94,7 +94,6 @@ setInterval(function(){
       ctx.fillRect(((i%50)-1)*10*sizingVar,Math.floor(i/50)*10*sizingVar,10*sizingVar,10*sizingVar)
         if(plrX <= i%50+8 && plrX >= i%50-10 && plrY >= Math.floor(i/50)-10&& plrY <= Math.floor(i)-5){
       plrY = Math.floor(i/50)-10
-        alert("YUP!!")
     }else{
 
       if(plrX <= i%50-6 && plrX >= i%50-11 && plrY >= Math.floor(i/50)-5&& plrY <= Math.floor(i/50)){
