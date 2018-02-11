@@ -345,11 +345,11 @@ setInterval(function(){
       if(blue == true && green==true && red == true){
       ctx.drawImage(boss,i%50*10*sizingVar,Math.floor(i/50)*10*sizingVar,10*sizingVar,10*sizingVar)
         if(time % 21 == 0){
-        if(plrX > i%50*10 && map1[i%50+1] != 1){
+        if(plrX > i%50*10 && map1[i+1] != 1){
           map1[i] = 0
           map1[i+1] = 7
         }
-        if(plrX < i%50*10 && map1[i%50-1] != 1){
+        if(plrX < i%50*10 && map1[i-1] != 1){
           map1[i] = 0
           map1[i-1] = 7
         }
