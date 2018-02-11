@@ -348,9 +348,23 @@ setInterval(function(){
         if(plrX > i%50*10 && map1[i+1] != 1){
           map1[i] = 0
           map1[i+1] = 7
+          if(plrY > Math.floor(i/50)*10 && map1[i+50] != 1){
+          map1[i+1] = 0
+          map1[i+50+1] = 7
+        }else if(plrY < Math.floor(i/50)*10 && map1[i-50] != 1){
+          map1[i+1] = 0
+          map1[i-50+1] = 7
+        }
         }else if(plrX < i%50*10 && map1[i-1] != 1){
           map1[i] = 0
           map1[i-1] = 7
+          if(plrY > Math.floor(i/50)*10 && map1[i+50] != 1){
+          map1[i-1] = 0
+          map1[i+50-1] = 7
+        }else if(plrY < Math.floor(i/50)*10 && map1[i-50] != 1){
+          map1[i] = 0
+          map1[i-50-1] = 7
+        }
         }else if(plrY > Math.floor(i/50)*10 && map1[i+50] != 1){
           map1[i] = 0
           map1[i+50] = 7
@@ -358,7 +372,11 @@ setInterval(function(){
           map1[i] = 0
           map1[i-50] = 7
         }
+        
         }
+      
+        
+      
       if(plrX <= blockX[i]*10+9 && plrX >= blockX[i]*10-9 && plrY >= blockY[i]*10-10&& plrY <= blockY[i]*10-5){
         alert("You can't touch the boss, It'll kill you!!!")
         plrX = 0
