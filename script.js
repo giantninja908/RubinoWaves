@@ -109,7 +109,7 @@ var boss1 = [
   0,0,0,0,0,0,1,0,0,0,0,0,1,1,1,1,1,1,0,0,1,1,1,1,1,1,0,0,1,1,1,1,1,1,0,0,1,1,1,1,1,1,0,0,0,0,0,0,0,0,
   0,1,1,1,1,0,1,0,0,0,0,0,1,1,0,0,1,1,0,0,1,1,0,0,1,1,0,0,1,1,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,
   0,1,0,0,0,0,1,0,0,0,0,0,1,1,0,0,1,1,0,0,1,1,0,0,1,1,0,0,1,1,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,
-  0,1,0,1,1,0,1,0,0,0,0,0,1,1,1,1,0,0,0,0,1,1,0,0,1,1,0,0,1,1,1,1,1,1,0,0,1,1,1,1,1,1,0,0,0,0,0,0,0,0,
+  0,1,0,1,0,0,1,0,0,0,0,0,1,1,1,1,0,0,0,0,1,1,0,0,1,1,0,0,1,1,1,1,1,1,0,0,1,1,1,1,1,1,0,0,0,0,0,0,0,0,
   0,1,0,1,0,1,1,0,0,0,0,0,1,1,1,1,0,0,0,0,1,1,0,0,1,1,0,0,1,1,1,1,1,1,0,0,1,1,1,1,1,1,0,0,0,0,0,0,0,0,
   0,1,0,1,0,5,1,0,0,0,0,0,1,1,0,0,1,1,0,0,1,1,0,0,1,1,0,0,0,0,0,0,1,1,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,
   0,1,0,1,1,1,1,0,0,0,0,0,1,1,0,0,1,1,0,0,1,1,0,0,1,1,0,0,0,0,0,0,1,1,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,
@@ -221,6 +221,8 @@ function BOSS(num){
   if(num == 0){
     alert("All boss fights contain some information that can be found some way by searching the map, some contain more info than others, in order to beat the boss, you must first learn a few things\n\nThere are 3 cones for this boss fight, you have to connect all three cones to see and then slay the boss\n\nGOOD LUCK!!")
     map1 = boss1
+    plrX = 0
+        plrY = 0
   }else{
     
   }
@@ -323,7 +325,7 @@ setInterval(function(){
     }
     if(map1[i] == 6){
       if(blue == false){
-      ctx.fillStyle = "lbue"
+      ctx.fillStyle = "blue"
       ctx.fillRect(i%50*10*sizingVar,Math.floor(i/50)*10*sizingVar,10*sizingVar,10*sizingVar)
       ctx.fillStyle = "black"
       if(plrX <= blockX[i]*10+9 && plrX >= blockX[i]*10-9 && plrY >= blockY[i]*10-10&& plrY <= blockY[i]*10-5){
@@ -341,8 +343,7 @@ setInterval(function(){
     }
     if(map1[i] == 7){
       if(blue == true && green==true && red == true){
-      ctx.fillRect(boss,i%50*10*sizingVar,Math.floor(i/50)*10*sizingVar,10*sizingVar,10*sizingVar)
-      ctx.fillStyle = "black"
+      ctx.drawImage(boss,i%50*10*sizingVar,Math.floor(i/50)*10*sizingVar,10*sizingVar,10*sizingVar)
         if(time % 21 == 0){
         if(plrX > i%50*10 && map1[i%50+1] != 1){
           map1[i%50] = 0
@@ -363,13 +364,21 @@ setInterval(function(){
         }
       if(plrX <= blockX[i]*10+9 && plrX >= blockX[i]*10-9 && plrY >= blockY[i]*10-10&& plrY <= blockY[i]*10-5){
         alert("You can't touch the boss, It'll kill you!!!")
+        plrX = 0
+        plrY = 0
     }else{
       if(plrX <= blockX[i]*10-9 && plrX >= blockX[i]*10-9 && plrY >= blockY[i]*10-5&& plrY <= blockY[i]*10){
         alert("You can't touch the boss, It'll kill you!!!")
+        plrX = 0
+        plrY = 0
       }else if(plrX <= blockX[i]*10+10 && plrX >= blockX[i]*10+5 && plrY >= blockY[i]*10-5&& plrY <= blockY[i]*10){
         alert("You can't touch the boss, It'll kill you!!!")
+        plrX = 0
+        plrY = 0
       }else if(plrX <= blockX[i]*10+5 && plrX >= blockX[i]*10-5 && blockY[i]*10+10>= plrY&& blockY[i]*10+5<=plrY){
         alert("You can't touch the boss, It'll kill you!!!")
+        plrX = 0
+        plrY = 0
       }
       }
       }
