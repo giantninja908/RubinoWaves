@@ -300,7 +300,6 @@ setInterval(function(){
       }
     }
     if(map1[i] == 3){
-      if(map1==m2){
       
       ctx.drawImage(boss,i%50*10*sizingVar,Math.floor(i/50)*10*sizingVar,10*sizingVar,10*sizingVar)
       if(plrX <= blockX[i]*10+9 && plrX >= blockX[i]*10-9 && plrY >= blockY[i]*10-10&& plrY <= blockY[i]*10-5){
@@ -315,7 +314,7 @@ setInterval(function(){
       }
       }
       
-      }
+      
     }
     if(map1[i] == 2){
       ctx.font = '8px Press Start 2P'
