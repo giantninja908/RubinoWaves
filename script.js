@@ -215,7 +215,7 @@ var boss = document.getElementById("boss")
 var SK = false
 var sizingVar;
 var walking = false
-function boss(num){
+function BOSS(num){
   if(num == 0){
     alert("All boss fights contain some information that can be found some way by searching the map, some contain more info than others, in order to beat the boss, you must first learn a few things\n\nThere are 3 cones for this boss fight, you have to connect all three cones to see and then slay the boss\n\nGOOD LUCK!!")
     map1 = boss1
