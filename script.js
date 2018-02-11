@@ -346,20 +346,20 @@ setInterval(function(){
       ctx.drawImage(boss,i%50*10*sizingVar,Math.floor(i/50)*10*sizingVar,10*sizingVar,10*sizingVar)
         if(time % 21 == 0){
         if(plrX > i%50*10 && map1[i%50+1] != 1){
-          map1[i%50] = 0
-          map1[i%50+1] = 7
+          map1[i] = 0
+          map1[i+1] = 7
         }
         if(plrX < i%50*10 && map1[i%50-1] != 1){
-          map1[i%50] = 0
-          map1[i%50-1] = 7
+          map1[i] = 0
+          map1[i-1] = 7
         }
-        if(plrY > Math.floor(i/50)*10 && map1[Math.floor(i/50)+1] != 1){
-          map1[Math.floor(i/50)] = 0
-          map1[Math.floor(i/50)+1] = 7
+        if(plrY > Math.floor(i/50)*10 && map1[i+50+1] != 1){
+          map1[i+50] = 0
+          map1[i+50+1] = 7
         }
-        if(plrY < Math.floor(i/50)*10 && map1[Math.floor(i/50)-1] != 1){
-          map1[Math.floor(i/50)] = 0
-          map1[Math.floor(i/50)-1] = 7
+        if(plrY < Math.floor(i/50)*10 && map1[i+50-1] != 1){
+          map1[i+50] = 0
+          map1[i+50-1] = 7
         }
         }
       if(plrX <= blockX[i]*10+9 && plrX >= blockX[i]*10-9 && plrY >= blockY[i]*10-10&& plrY <= blockY[i]*10-5){
