@@ -115,8 +115,8 @@ var boss1 = [
   0,1,0,1,1,1,1,0,0,0,0,0,1,1,0,0,1,1,0,0,1,1,0,0,1,1,0,0,0,0,0,0,1,1,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,
   4,1,0,1,0,0,0,0,0,0,0,0,1,1,1,1,1,1,0,0,1,1,1,1,1,1,0,0,1,1,1,1,1,1,0,0,1,1,1,1,1,1,0,0,0,0,0,0,0,0,
   1,1,0,1,0,0,0,0,0,0,0,0,1,1,1,1,1,1,0,0,1,1,1,1,1,1,0,0,1,1,1,1,1,1,0,0,1,1,1,1,1,1,0,0,0,0,0,0,0,0,
-  0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-  0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+  1,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+  1,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
   1,1,6,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
   1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
   1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
@@ -154,6 +154,7 @@ var boss1 = [
   0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
   0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 ]
+var mapNum = 1
 map1=m1
 var arrow_keys_handler = function(e) {
   e=e||window.event
@@ -193,6 +194,7 @@ var height = 0
 var width = 0
 var plrX = 0
 var plrY = 0
+var bossHealth = 100
 var AK = false
 var DK = false
 var blue = false
@@ -272,7 +274,7 @@ setInterval(function(){
         
         if(plrX <= blockX[i]*10+9 && plrX >= blockX[i]*10-9 && plrY >= blockY[i]*10-10&& plrY <= blockY[i]*10-5){
       plrY = blockY[i]*10-10
-    }else if(plrX <= blockX[i]*10+5 && plrX >= blockX[i]*10-5 && blockY[i]*10+10>= plrY&& blockY[i]*10+5<=plrY){
+    }else if(plrX <= blockX[i]*10+9 && plrX >= blockX[i]*10-9 && blockY[i]*10+10>= plrY&& blockY[i]*10+5<=plrY){
         plrY = blockY[i]*10+10
       }else{
 
@@ -284,6 +286,7 @@ setInterval(function(){
       }
       }
     if(map1[i] == 4){
+      if(red == false){
       ctx.fillStyle = "red"
       ctx.fillRect(i%50*10*sizingVar,Math.floor(i/50)*10*sizingVar,10*sizingVar,10*sizingVar)
       ctx.fillStyle = "black"
@@ -298,9 +301,81 @@ setInterval(function(){
         red = true
       }
       }
+      }
+    }
+    if(map1[i] == 5){
+      if(green == false){
+      ctx.fillStyle = "green"
+      ctx.fillRect(i%50*10*sizingVar,Math.floor(i/50)*10*sizingVar,10*sizingVar,10*sizingVar)
+      ctx.fillStyle = "black"
+      if(plrX <= blockX[i]*10+9 && plrX >= blockX[i]*10-9 && plrY >= blockY[i]*10-10&& plrY <= blockY[i]*10-5){
+      green = true
+    }else{
+      if(plrX <= blockX[i]*10-5 && plrX >= blockX[i]*10-10 && plrY >= blockY[i]*10-5&& plrY <= blockY[i]*10){
+        green = true
+      }else if(plrX <= blockX[i]*10+10 && plrX >= blockX[i]*10+5 && plrY >= blockY[i]*10-5&& plrY <= blockY[i]*10){
+        green = true
+      }else if(plrX <= blockX[i]*10+5 && plrX >= blockX[i]*10-5 && blockY[i]*10+10>= plrY&& blockY[i]*10+5<=plrY){
+        green = true
+      }
+      }
+      }
+    }
+    if(map1[i] == 6){
+      if(blue == false){
+      ctx.fillStyle = "lbue"
+      ctx.fillRect(i%50*10*sizingVar,Math.floor(i/50)*10*sizingVar,10*sizingVar,10*sizingVar)
+      ctx.fillStyle = "black"
+      if(plrX <= blockX[i]*10+9 && plrX >= blockX[i]*10-9 && plrY >= blockY[i]*10-10&& plrY <= blockY[i]*10-5){
+      blue = true
+    }else{
+      if(plrX <= blockX[i]*10-5 && plrX >= blockX[i]*10-10 && plrY >= blockY[i]*10-5&& plrY <= blockY[i]*10){
+        blue = true
+      }else if(plrX <= blockX[i]*10+10 && plrX >= blockX[i]*10+5 && plrY >= blockY[i]*10-5&& plrY <= blockY[i]*10){
+        blue = true
+      }else if(plrX <= blockX[i]*10+5 && plrX >= blockX[i]*10-5 && blockY[i]*10+10>= plrY&& blockY[i]*10+5<=plrY){
+        blue = true
+      }
+      }
+      }
+    }
+    if(map1[i] == 7){
+      if(blue == true && green==true && red == true){
+      ctx.fillRect(boss,i%50*10*sizingVar,Math.floor(i/50)*10*sizingVar,10*sizingVar,10*sizingVar)
+      ctx.fillStyle = "black"
+        if(time % 21 == 0){
+        if(plrX > i%50*10 && map1[i%50+1] != 1){
+          map1[i%50] = 0
+          map1[i%50+1] = 7
+        }
+        if(plrX < i%50*10 && map1[i%50-1] != 1){
+          map1[i%50] = 0
+          map1[i%50-1] = 7
+        }
+        if(plrY > Math.floor(i/50)*10 && map1[Math.floor(i/50)+1] != 1){
+          map1[Math.floor(i/50)] = 0
+          map1[Math.floor(i/50)+1] = 7
+        }
+        if(plrY < Math.floor(i/50)*10 && map1[Math.floor(i/50)-1] != 1){
+          map1[Math.floor(i/50)] = 0
+          map1[Math.floor(i/50)-1] = 7
+        }
+        }
+      if(plrX <= blockX[i]*10+9 && plrX >= blockX[i]*10-9 && plrY >= blockY[i]*10-10&& plrY <= blockY[i]*10-5){
+        alert("You can't touch the boss, It'll kill you!!!")
+    }else{
+      if(plrX <= blockX[i]*10-9 && plrX >= blockX[i]*10-9 && plrY >= blockY[i]*10-5&& plrY <= blockY[i]*10){
+        alert("You can't touch the boss, It'll kill you!!!")
+      }else if(plrX <= blockX[i]*10+10 && plrX >= blockX[i]*10+5 && plrY >= blockY[i]*10-5&& plrY <= blockY[i]*10){
+        alert("You can't touch the boss, It'll kill you!!!")
+      }else if(plrX <= blockX[i]*10+5 && plrX >= blockX[i]*10-5 && blockY[i]*10+10>= plrY&& blockY[i]*10+5<=plrY){
+        alert("You can't touch the boss, It'll kill you!!!")
+      }
+      }
+      }
     }
     if(map1[i] == 3){
-      
+      if(map1 == m2){
       ctx.drawImage(boss,i%50*10*sizingVar,Math.floor(i/50)*10*sizingVar,10*sizingVar,10*sizingVar)
       if(plrX <= blockX[i]*10+9 && plrX >= blockX[i]*10-9 && plrY >= blockY[i]*10-10&& plrY <= blockY[i]*10-5){
       BOSS(0)
@@ -313,7 +388,7 @@ setInterval(function(){
         BOSS(0)
       }
       }
-      
+      }
       
     }
     if(map1[i] == 2){
