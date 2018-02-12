@@ -389,7 +389,7 @@ setInterval(function() {
         if (map1[i] == 7) {
             if (blue == true && green == true && red == true) {
                 ctx.drawImage(boss, i % 50 * 10 * sizingVar, Math.floor(i / 50) * 10 * sizingVar, 10 * sizingVar, 10 * sizingVar)
-                if (time % 61 == 0) {
+                if (time % 121 == 0) {
                     if (plrX > i % 50 * 10 && map1[i + 1] != 1) {
                         map1[i] = 0
                         map1[i + 1] = 7
@@ -406,7 +406,7 @@ setInterval(function() {
                         map1[i - 50] = 7
                     }
                 }
-                if (time % 120 == 0 && time % 61 != 0) {
+                if (time % 120 == 0 && time % 121 != 0) {
                     if (plrY > Math.floor(i / 50) * 10 && map1[i + 50] != 1) {
                         map1[i] = 0
                         map1[i + 50] = 7
