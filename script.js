@@ -398,7 +398,7 @@ setInterval(function() {
                 ctx.drawImage(boss, i % 50 * 10 * sizingVar, Math.floor(i / 50) * 10 * sizingVar, 10 * sizingVar, 10 * sizingVar)
                 if (time % 60 == 0) {
                     
-                    if (plrX > boss1 % 50 * 10 && map[boss1 + 1] != 1) {
+                    if (plrX > boss1 % 50 * 10 && map1[boss1 + 1] != 1) {
                         map1[boss1] = 0
                         map1[boss1 + 1] = 7
                         boss1 = boss1+1
