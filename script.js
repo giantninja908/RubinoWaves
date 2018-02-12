@@ -429,7 +429,7 @@ setInterval(function() {
 
 
             if (plrX <= blockX[i] * 10 + 9 && plrX >= blockX[i] * 10 - 9 && plrY >= blockY[i] * 10 - 10 && plrY <= blockY[i] * 10 - 5) {
-                alert("You can't touch the boss, It'll kill you!!!")
+                
                 plrX = 0
                 plrY = 0
                 map1 = m2
@@ -439,7 +439,7 @@ setInterval(function() {
                 DK = false
             } else {
                 if (plrX <= blockX[i] * 10 - 9 && plrX >= blockX[i] * 10 - 9 && plrY >= blockY[i] * 10 - 5 && plrY <= blockY[i] * 10) {
-                    alert("You can't touch the boss, It'll kill you!!!")
+                    
                     plrX = 0
                     plrY = 0
                     AK = false
@@ -448,7 +448,7 @@ setInterval(function() {
                     DK = false
                     map1 = m2
                 } else if (plrX <= blockX[i] * 10 + 10 && plrX >= blockX[i] * 10 + 5 && plrY >= blockY[i] * 10 - 5 && plrY <= blockY[i] * 10) {
-                    alert("You can't touch the boss, It'll kill you!!!")
+                    
                     plrX = 0
                     plrY = 0
                     AK = false
@@ -457,7 +457,7 @@ setInterval(function() {
                     DK = false
                     map1 = m2
                 } else if (plrX <= blockX[i] * 10 + 5 && plrX >= blockX[i] * 10 - 5 && blockY[i] * 10 + 10 >= plrY && blockY[i] * 10 + 5 <= plrY) {
-                    alert("You can't touch the boss, It'll kill you!!!")
+                    
                     plrX = 0
                     plrY = 0
                     AK = false
