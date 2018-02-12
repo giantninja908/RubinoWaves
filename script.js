@@ -515,7 +515,7 @@ document.onkeydown = function(e) {
         walking = true
     }
     if (res == "B") {
-        alert('"Photoreception." Britannica School, Encyclopædia Britannica, 8 Mar. 2011. school.eb.com/levels/middle/article/photoreception/109524. Accessed 9 Feb. 2018.\nViegas, Jennifer. The Eye: Learning How We See. Rosen Pub. Group, 2002.\n"Cone." Britannica School, Encyclopædia Britannica, 7 Aug. 2007. school.eb.com/levels/middle/article/cone/25138. Accessed 9 Feb. 2018.\n"Rod." Britannica School, Encyclopædia Britannica, 7 Aug. 2007. school.eb.com/levels/middle/article/William-Jennings-Bryan/64015. Accessed 9 Feb. 2018.')
+        alert('"Photoreception." Britannica School, Encyclopædia Britannica, 8 Mar. 2011. school.eb.com/levels/middle/article/photoreception/109524. Accessed 9 Feb. 2018.\n\nViegas, Jennifer. The Eye: Learning How We See. Rosen Pub. Group, 2002.\n\n"Cone." Britannica School, Encyclopædia Britannica, 7 Aug. 2007. school.eb.com/levels/middle/article/cone/25138. Accessed 9 Feb. 2018.\n\n"Rod." Britannica School, Encyclopædia Britannica, 7 Aug. 2007. school.eb.com/levels/middle/article/William-Jennings-Bryan/64015. Accessed 9 Feb. 2018.\n\n\nThere we go')
     }
     if (res == "W" || e.keyCode == 38) {
         WK = true
