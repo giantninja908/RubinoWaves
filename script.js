@@ -462,40 +462,40 @@ setInterval(function() {
             }
         }
     }
-}
-if (dir == "up" && animationFrameNo == 0) {
-    ctx.drawImage(linkUp1, plrX * sizingVar, plrY * sizingVar, 10 * sizingVar, 10 * sizingVar)
-}
-if (dir == "up" && animationFrameNo == 1) {
-    ctx.drawImage(linkUp2, plrX * sizingVar, plrY * sizingVar, 10 * sizingVar, 10 * sizingVar)
-}
-if (dir == "down" && animationFrameNo == 0) {
-    ctx.drawImage(linkDown1, plrX * sizingVar, plrY * sizingVar, 10 * sizingVar, 10 * sizingVar)
-}
-if (dir == "down" && animationFrameNo == 1) {
-    ctx.drawImage(linkDown2, plrX * sizingVar, plrY * sizingVar, 10 * sizingVar, 10 * sizingVar)
-}
-if (dir == "left" && animationFrameNo == 0) {
-    ctx.drawImage(linkLeft1, plrX * sizingVar, plrY * sizingVar, 10 * sizingVar, 10 * sizingVar)
-}
-if (dir == "left" && animationFrameNo == 1) {
-    ctx.drawImage(linkLeft2, plrX * sizingVar, plrY * sizingVar, 10 * sizingVar, 10 * sizingVar)
-}
-if (dir == "right" && animationFrameNo == 0) {
-    ctx.drawImage(linkRight1, plrX * sizingVar, plrY * sizingVar, 10 * sizingVar, 10 * sizingVar)
-}
-if (dir == "right" && animationFrameNo == 1) {
-    ctx.drawImage(linkRight2, plrX * sizingVar, plrY * sizingVar, 10 * sizingVar, 10 * sizingVar)
-}
-if (time % 10 == 0 && walking == true) {
-    if (animationFrameNo == 0) {
-        animationFrameNo = 1
-    } else {
-        animationFrameNo = 0
+
+    if (dir == "up" && animationFrameNo == 0) {
+        ctx.drawImage(linkUp1, plrX * sizingVar, plrY * sizingVar, 10 * sizingVar, 10 * sizingVar)
     }
-}
-//Sizing var would be for scaling on a 500x500 canvas, with it being the number to multiply by for pixels
-//ctx.fillRect(plrX*sizingVar, plrY*sizingVar, 10*sizingVar, 10*sizingVar)
+    if (dir == "up" && animationFrameNo == 1) {
+        ctx.drawImage(linkUp2, plrX * sizingVar, plrY * sizingVar, 10 * sizingVar, 10 * sizingVar)
+    }
+    if (dir == "down" && animationFrameNo == 0) {
+        ctx.drawImage(linkDown1, plrX * sizingVar, plrY * sizingVar, 10 * sizingVar, 10 * sizingVar)
+    }
+    if (dir == "down" && animationFrameNo == 1) {
+        ctx.drawImage(linkDown2, plrX * sizingVar, plrY * sizingVar, 10 * sizingVar, 10 * sizingVar)
+    }
+    if (dir == "left" && animationFrameNo == 0) {
+        ctx.drawImage(linkLeft1, plrX * sizingVar, plrY * sizingVar, 10 * sizingVar, 10 * sizingVar)
+    }
+    if (dir == "left" && animationFrameNo == 1) {
+        ctx.drawImage(linkLeft2, plrX * sizingVar, plrY * sizingVar, 10 * sizingVar, 10 * sizingVar)
+    }
+    if (dir == "right" && animationFrameNo == 0) {
+        ctx.drawImage(linkRight1, plrX * sizingVar, plrY * sizingVar, 10 * sizingVar, 10 * sizingVar)
+    }
+    if (dir == "right" && animationFrameNo == 1) {
+        ctx.drawImage(linkRight2, plrX * sizingVar, plrY * sizingVar, 10 * sizingVar, 10 * sizingVar)
+    }
+    if (time % 10 == 0 && walking == true) {
+        if (animationFrameNo == 0) {
+            animationFrameNo = 1
+        } else {
+            animationFrameNo = 0
+        }
+    }
+    //Sizing var would be for scaling on a 500x500 canvas, with it being the number to multiply by for pixels
+    //ctx.fillRect(plrX*sizingVar, plrY*sizingVar, 10*sizingVar, 10*sizingVar)
 
 }, 1000 / 60)
 document.onkeydown = function(e) {
