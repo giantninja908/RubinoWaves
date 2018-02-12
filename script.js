@@ -406,7 +406,7 @@ setInterval(function() {
                         map1[i - 50] = 7
                     }
                 }
-                if (time % 120 == 0 && time % 121 != 0) {
+                if (time % 180 == 0 && time % 121 != 0) {
                     if (plrY > Math.floor(i / 50) * 10 && map1[i + 50] != 1) {
                         map1[i] = 0
                         map1[i + 50] = 7
