@@ -102,7 +102,7 @@ var m2 = [
     0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
     0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
 ]
-var boss1 = [
+var b1 = [
     0, 1, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
     0, 1, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
     0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0,
@@ -228,7 +228,7 @@ var walking = false
 function BOSS(num) {
     if (num == 0) {
         alert("All boss fights contain some information that can be found some way by searching the map, some contain more info than others, in order to beat the boss, you must first learn a few things\n\nThere are 3 cones for this boss fight, you have to connect all three cones to see and then slay the boss\n\nGOOD LUCK!!")
-        map1 = boss1
+        map1 = b1
         plrX = 0
         plrY = 0
     } else {
@@ -389,40 +389,30 @@ setInterval(function() {
         if (map1[i] == 7) {
             if (blue == true && green == true && red == true) {
                 ctx.drawImage(boss, i % 50 * 10 * sizingVar, Math.floor(i / 50) * 10 * sizingVar, 10 * sizingVar, 10 * sizingVar)
-                if (time % 121 == 0) {
-                    if (plrX > i % 50 * 10 && map1[i + 1] != 1) {
-                        map1[i] = 0
-                        map1[i + 1] = 7
-
-                    } else if (plrX < i % 50 * 10 && map1[i - 1] != 1) {
-                        map1[i] = 0
-                        map1[i - 1] = 7
-
-                    } else if (plrY > Math.floor(i / 50) * 10 && map1[i + 50] != 1) {
-                        map1[i] = 0
-                        map1[i + 50] = 7
-                    } else if (plrY < Math.floor(i / 50) * 10 && map1[i - 50] != 1) {
-                        map1[i] = 0
-                        map1[i - 50] = 7
+                if (time % 60 == 0) {
+                    var boss1 = i
+                    if (plrX > boss1 % 50 * 10 && map[boss1] + 1] != 1) {
+                        map1[boss1] = 0
+                        map1[boss1 + 1] = 7
+                        boss1 = boss1+=1
+                    }
+                    if (plrX < boss1 % 50 * 10 && map1[boss1 - 1] != 1) {
+                        map1[boss1] = 0
+                        map1[boss1 - 1] = 7
+                        boss1 = boss1-=1
+                    }
+                    if (plrY > Math.floor(boss1 / 50) * 10 && map1[boss1 + 50] != 1) {
+                        map1[boss1] = 0
+                        map1[boss1 + 50] = 7
+                        boss1 = boss1+=50
+                    }
+                    if (plrY < Math.floor(boss / 50) * 10 && map1[boss1 - 50] != 1) {
+                        map1[boss1] = 0
+                        map1[boss1 - 50] = 7
+                        boss1 = boss1-=50
                     }
                 }
-                if (time % 180 == 0 && time % 121 != 0) {
-                    if (plrY > Math.floor(i / 50) * 10 && map1[i + 50] != 1) {
-                        map1[i] = 0
-                        map1[i + 50] = 7
-                    } else if (plrY < Math.floor(i / 50) * 10 && map1[i - 50] != 1) {
-                        map1[i] = 0
-                        map1[i - 50] = 7
-                    } else if (plrX > i % 50 * 10 && map1[i + 1] != 1) {
-                        map1[i] = 0
-                        map1[i + 1] = 7
-
-                    } else if (plrX < i % 50 * 10 && map1[i - 1] != 1) {
-                        map1[i] = 0
-                        map1[i - 1] = 7
-
-                    }
-                }
+                
 
 
 
