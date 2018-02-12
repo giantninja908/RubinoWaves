@@ -315,6 +315,23 @@ setInterval(function() {
             }
         }
     }
+        if (map1[i] == 3) {
+        if (map1 == m2) {
+            ctx.drawImage(boss, i % 50 * 10 * sizingVar, Math.floor(i / 50) * 10 * sizingVar, 10 * sizingVar, 10 * sizingVar)
+            if (plrX <= blockX[i] * 10 + 9 && plrX >= blockX[i] * 10 - 9 && plrY >= blockY[i] * 10 - 10 && plrY <= blockY[i] * 10 - 5) {
+                BOSS(0)
+            } else {
+                if (plrX <= blockX[i] * 10 - 5 && plrX >= blockX[i] * 10 - 10 && plrY >= blockY[i] * 10 - 5 && plrY <= blockY[i] * 10) {
+                    BOSS(0)
+                } else if (plrX <= blockX[i] * 10 + 10 && plrX >= blockX[i] * 10 + 5 && plrY >= blockY[i] * 10 - 5 && plrY <= blockY[i] * 10) {
+                    BOSS(0)
+                } else if (plrX <= blockX[i] * 10 + 5 && plrX >= blockX[i] * 10 - 5 && blockY[i] * 10 + 10 >= plrY && blockY[i] * 10 + 5 <= plrY) {
+                    BOSS(0)
+                }
+            }
+        }
+
+    }
         if (map1[i] == 4) {
             if (red == false) {
                 ctx.fillStyle = "red"
@@ -445,23 +462,7 @@ setInterval(function() {
         }
     }
 
-    if (map1[i] == 3) {
-        if (map1 == m2) {
-            ctx.drawImage(boss, i % 50 * 10 * sizingVar, Math.floor(i / 50) * 10 * sizingVar, 10 * sizingVar, 10 * sizingVar)
-            if (plrX <= blockX[i] * 10 + 9 && plrX >= blockX[i] * 10 - 9 && plrY >= blockY[i] * 10 - 10 && plrY <= blockY[i] * 10 - 5) {
-                BOSS(0)
-            } else {
-                if (plrX <= blockX[i] * 10 - 5 && plrX >= blockX[i] * 10 - 10 && plrY >= blockY[i] * 10 - 5 && plrY <= blockY[i] * 10) {
-                    BOSS(0)
-                } else if (plrX <= blockX[i] * 10 + 10 && plrX >= blockX[i] * 10 + 5 && plrY >= blockY[i] * 10 - 5 && plrY <= blockY[i] * 10) {
-                    BOSS(0)
-                } else if (plrX <= blockX[i] * 10 + 5 && plrX >= blockX[i] * 10 - 5 && blockY[i] * 10 + 10 >= plrY && blockY[i] * 10 + 5 <= plrY) {
-                    BOSS(0)
-                }
-            }
-        }
-
-    }
+    
     
 
     if (dir == "up" && animationFrameNo == 0) {
