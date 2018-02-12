@@ -413,7 +413,7 @@ setInterval(function() {
                         map1[boss1 + 50] = 7
                         boss1 = boss1+50
                     }
-                    if (plrY < Math.floor(boss / 50) * 10 && map1[boss1 - 50] != 1) {
+                    if (plrY < Math.floor(boss1 / 50) * 10 && map1[boss1 - 50] != 1) {
                         map1[boss1] = 0
                         map1[boss1 - 50] = 7
                         boss1 = boss1-50
