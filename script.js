@@ -295,6 +295,26 @@ setInterval(function() {
                 } else {}
             }
         }
+        if (map1[i] == 2) {
+        ctx.font = '8px Press Start 2P'
+        if (map1 == m1) {
+            ctx.fillText("tutorial", i % 50 * 10 * sizingVar - 5, Math.floor(i / 50) * 10 * sizingVar - 10)
+        } else {
+            ctx.fillText("exit tutorial", i % 50 * 10 * sizingVar - 10, Math.floor(i / 50) * 10 * sizingVar - 10)
+        }
+        ctx.drawImage(oldMan, i % 50 * 10 * sizingVar, Math.floor(i / 50) * 10 * sizingVar, 10 * sizingVar, 10 * sizingVar)
+        if (plrX <= blockX[i] * 10 + 9 && plrX >= blockX[i] * 10 - 9 && plrY >= blockY[i] * 10 - 10 && plrY <= blockY[i] * 10 - 5) {
+            tutorial()
+        } else {
+            if (plrX <= blockX[i] * 10 - 5 && plrX >= blockX[i] * 10 - 10 && plrY >= blockY[i] * 10 - 5 && plrY <= blockY[i] * 10) {
+                tutorial()
+            } else if (plrX <= blockX[i] * 10 + 10 && plrX >= blockX[i] * 10 + 5 && plrY >= blockY[i] * 10 - 5 && plrY <= blockY[i] * 10) {
+                tutorial()
+            } else if (plrX <= blockX[i] * 10 + 5 && plrX >= blockX[i] * 10 - 5 && blockY[i] * 10 + 10 >= plrY && blockY[i] * 10 + 5 <= plrY) {
+                tutorial()
+            }
+        }
+    }
         if (map1[i] == 4) {
             if (red == false) {
                 ctx.fillStyle = "red"
@@ -442,26 +462,7 @@ setInterval(function() {
         }
 
     }
-    if (map1[i] == 2) {
-        ctx.font = '8px Press Start 2P'
-        if (map1 == m1) {
-            ctx.fillText("tutorial", i % 50 * 10 * sizingVar - 5, Math.floor(i / 50) * 10 * sizingVar - 10)
-        } else {
-            ctx.fillText("exit tutorial", i % 50 * 10 * sizingVar - 10, Math.floor(i / 50) * 10 * sizingVar - 10)
-        }
-        ctx.drawImage(oldMan, i % 50 * 10 * sizingVar, Math.floor(i / 50) * 10 * sizingVar, 10 * sizingVar, 10 * sizingVar)
-        if (plrX <= blockX[i] * 10 + 9 && plrX >= blockX[i] * 10 - 9 && plrY >= blockY[i] * 10 - 10 && plrY <= blockY[i] * 10 - 5) {
-            tutorial()
-        } else {
-            if (plrX <= blockX[i] * 10 - 5 && plrX >= blockX[i] * 10 - 10 && plrY >= blockY[i] * 10 - 5 && plrY <= blockY[i] * 10) {
-                tutorial()
-            } else if (plrX <= blockX[i] * 10 + 10 && plrX >= blockX[i] * 10 + 5 && plrY >= blockY[i] * 10 - 5 && plrY <= blockY[i] * 10) {
-                tutorial()
-            } else if (plrX <= blockX[i] * 10 + 5 && plrX >= blockX[i] * 10 - 5 && blockY[i] * 10 + 10 >= plrY && blockY[i] * 10 + 5 <= plrY) {
-                tutorial()
-            }
-        }
-    }
+    
 
     if (dir == "up" && animationFrameNo == 0) {
         ctx.drawImage(linkUp1, plrX * sizingVar, plrY * sizingVar, 10 * sizingVar, 10 * sizingVar)
