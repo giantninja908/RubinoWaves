@@ -296,42 +296,42 @@ setInterval(function() {
             }
         }
         if (map1[i] == 2) {
-        ctx.font = '8px Press Start 2P'
-        if (map1 == m1) {
-            ctx.fillText("tutorial", i % 50 * 10 * sizingVar - 5, Math.floor(i / 50) * 10 * sizingVar - 10)
-        } else {
-            ctx.fillText("exit tutorial", i % 50 * 10 * sizingVar - 10, Math.floor(i / 50) * 10 * sizingVar - 10)
-        }
-        ctx.drawImage(oldMan, i % 50 * 10 * sizingVar, Math.floor(i / 50) * 10 * sizingVar, 10 * sizingVar, 10 * sizingVar)
-        if (plrX <= blockX[i] * 10 + 9 && plrX >= blockX[i] * 10 - 9 && plrY >= blockY[i] * 10 - 10 && plrY <= blockY[i] * 10 - 5) {
-            tutorial()
-        } else {
-            if (plrX <= blockX[i] * 10 - 5 && plrX >= blockX[i] * 10 - 10 && plrY >= blockY[i] * 10 - 5 && plrY <= blockY[i] * 10) {
-                tutorial()
-            } else if (plrX <= blockX[i] * 10 + 10 && plrX >= blockX[i] * 10 + 5 && plrY >= blockY[i] * 10 - 5 && plrY <= blockY[i] * 10) {
-                tutorial()
-            } else if (plrX <= blockX[i] * 10 + 5 && plrX >= blockX[i] * 10 - 5 && blockY[i] * 10 + 10 >= plrY && blockY[i] * 10 + 5 <= plrY) {
-                tutorial()
+            ctx.font = '8px Press Start 2P'
+            if (map1 == m1) {
+                ctx.fillText("tutorial", i % 50 * 10 * sizingVar - 5, Math.floor(i / 50) * 10 * sizingVar - 10)
+            } else {
+                ctx.fillText("exit tutorial", i % 50 * 10 * sizingVar - 10, Math.floor(i / 50) * 10 * sizingVar - 10)
             }
-        }
-    }
-        if (map1[i] == 3) {
-        if (map1 == m2) {
-            ctx.drawImage(boss, i % 50 * 10 * sizingVar, Math.floor(i / 50) * 10 * sizingVar, 10 * sizingVar, 10 * sizingVar)
+            ctx.drawImage(oldMan, i % 50 * 10 * sizingVar, Math.floor(i / 50) * 10 * sizingVar, 10 * sizingVar, 10 * sizingVar)
             if (plrX <= blockX[i] * 10 + 9 && plrX >= blockX[i] * 10 - 9 && plrY >= blockY[i] * 10 - 10 && plrY <= blockY[i] * 10 - 5) {
-                BOSS(0)
+                tutorial()
             } else {
                 if (plrX <= blockX[i] * 10 - 5 && plrX >= blockX[i] * 10 - 10 && plrY >= blockY[i] * 10 - 5 && plrY <= blockY[i] * 10) {
-                    BOSS(0)
+                    tutorial()
                 } else if (plrX <= blockX[i] * 10 + 10 && plrX >= blockX[i] * 10 + 5 && plrY >= blockY[i] * 10 - 5 && plrY <= blockY[i] * 10) {
-                    BOSS(0)
+                    tutorial()
                 } else if (plrX <= blockX[i] * 10 + 5 && plrX >= blockX[i] * 10 - 5 && blockY[i] * 10 + 10 >= plrY && blockY[i] * 10 + 5 <= plrY) {
-                    BOSS(0)
+                    tutorial()
                 }
             }
         }
+        if (map1[i] == 3) {
+            if (map1 == m2) {
+                ctx.drawImage(boss, i % 50 * 10 * sizingVar, Math.floor(i / 50) * 10 * sizingVar, 10 * sizingVar, 10 * sizingVar)
+                if (plrX <= blockX[i] * 10 + 9 && plrX >= blockX[i] * 10 - 9 && plrY >= blockY[i] * 10 - 10 && plrY <= blockY[i] * 10 - 5) {
+                    BOSS(0)
+                } else {
+                    if (plrX <= blockX[i] * 10 - 5 && plrX >= blockX[i] * 10 - 10 && plrY >= blockY[i] * 10 - 5 && plrY <= blockY[i] * 10) {
+                        BOSS(0)
+                    } else if (plrX <= blockX[i] * 10 + 10 && plrX >= blockX[i] * 10 + 5 && plrY >= blockY[i] * 10 - 5 && plrY <= blockY[i] * 10) {
+                        BOSS(0)
+                    } else if (plrX <= blockX[i] * 10 + 5 && plrX >= blockX[i] * 10 - 5 && blockY[i] * 10 + 10 >= plrY && blockY[i] * 10 + 5 <= plrY) {
+                        BOSS(0)
+                    }
+                }
+            }
 
-    }
+        }
         if (map1[i] == 4) {
             if (red == false) {
                 ctx.fillStyle = "red"
@@ -395,83 +395,83 @@ setInterval(function() {
                         map1[i + 1] = 7
 
                     } else if (plrX < i % 50 * 10 && map1[i - 1] != 1) {
-                    map1[i] = 0
-                    map1[i - 1] = 7
+                        map1[i] = 0
+                        map1[i - 1] = 7
 
-                }
-            } else if (plrY > Math.floor(i / 50) * 10 && map1[i + 50] != 1) {
-                map1[i] = 0
-                map1[i + 50] = 7
-            } else if (plrY < Math.floor(i / 50) * 10 && map1[i - 50] != 1) {
-                map1[i] = 0
-                map1[i - 50] = 7
-            }
-                } 
-            if (time % 60 == 0 && time % 61 != 0) {
-                if (plrY > Math.floor(i / 50) * 10 && map1[i + 50] != 1) {
+                    }
+                } else if (plrY > Math.floor(i / 50) * 10 && map1[i + 50] != 1) {
                     map1[i] = 0
                     map1[i + 50] = 7
                 } else if (plrY < Math.floor(i / 50) * 10 && map1[i - 50] != 1) {
                     map1[i] = 0
                     map1[i - 50] = 7
-                }else if (plrX > i % 50 * 10 && map1[i + 1] != 1) {
+                }
+
+                if (time % 60 == 0 && time % 61 != 0) {
+                    if (plrY > Math.floor(i / 50) * 10 && map1[i + 50] != 1) {
+                        map1[i] = 0
+                        map1[i + 50] = 7
+                    } else if (plrY < Math.floor(i / 50) * 10 && map1[i - 50] != 1) {
+                        map1[i] = 0
+                        map1[i - 50] = 7
+                    } else if (plrX > i % 50 * 10 && map1[i + 1] != 1) {
                         map1[i] = 0
                         map1[i + 1] = 7
 
                     } else if (plrX < i % 50 * 10 && map1[i - 1] != 1) {
-                    map1[i] = 0
-                    map1[i - 1] = 7
+                        map1[i] = 0
+                        map1[i - 1] = 7
 
+                    }
                 }
-            }
 
 
 
 
-            if (plrX <= blockX[i] * 10 + 9 && plrX >= blockX[i] * 10 - 9 && plrY >= blockY[i] * 10 - 10 && plrY <= blockY[i] * 10 - 5) {
-                
-                plrX = 0
-                plrY = 0
-                map1 = m2
-                AK = false
-                SK = false
-                WK = false
-                DK = false
-            } else {
-                if (plrX <= blockX[i] * 10 - 9 && plrX >= blockX[i] * 10 - 9 && plrY >= blockY[i] * 10 - 5 && plrY <= blockY[i] * 10) {
-                    
+                if (plrX <= blockX[i] * 10 + 9 && plrX >= blockX[i] * 10 - 9 && plrY >= blockY[i] * 10 - 10 && plrY <= blockY[i] * 10 - 5) {
+
                     plrX = 0
                     plrY = 0
+                    map1 = m2
                     AK = false
                     SK = false
                     WK = false
                     DK = false
-                    map1 = m2
-                } else if (plrX <= blockX[i] * 10 + 10 && plrX >= blockX[i] * 10 + 5 && plrY >= blockY[i] * 10 - 5 && plrY <= blockY[i] * 10) {
-                    
-                    plrX = 0
-                    plrY = 0
-                    AK = false
-                    SK = false
-                    WK = false
-                    DK = false
-                    map1 = m2
-                } else if (plrX <= blockX[i] * 10 + 5 && plrX >= blockX[i] * 10 - 5 && blockY[i] * 10 + 10 >= plrY && blockY[i] * 10 + 5 <= plrY) {
-                    
-                    plrX = 0
-                    plrY = 0
-                    AK = false
-                    SK = false
-                    WK = false
-                    DK = false
-                    map1 = m2
+                } else {
+                    if (plrX <= blockX[i] * 10 - 9 && plrX >= blockX[i] * 10 - 9 && plrY >= blockY[i] * 10 - 5 && plrY <= blockY[i] * 10) {
+
+                        plrX = 0
+                        plrY = 0
+                        AK = false
+                        SK = false
+                        WK = false
+                        DK = false
+                        map1 = m2
+                    } else if (plrX <= blockX[i] * 10 + 10 && plrX >= blockX[i] * 10 + 5 && plrY >= blockY[i] * 10 - 5 && plrY <= blockY[i] * 10) {
+
+                        plrX = 0
+                        plrY = 0
+                        AK = false
+                        SK = false
+                        WK = false
+                        DK = false
+                        map1 = m2
+                    } else if (plrX <= blockX[i] * 10 + 5 && plrX >= blockX[i] * 10 - 5 && blockY[i] * 10 + 10 >= plrY && blockY[i] * 10 + 5 <= plrY) {
+
+                        plrX = 0
+                        plrY = 0
+                        AK = false
+                        SK = false
+                        WK = false
+                        DK = false
+                        map1 = m2
+                    }
                 }
             }
         }
-    
-}
-    
-    
+    }
+
+
 
     if (dir == "up" && animationFrameNo == 0) {
         ctx.drawImage(linkUp1, plrX * sizingVar, plrY * sizingVar, 10 * sizingVar, 10 * sizingVar)
