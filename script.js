@@ -418,14 +418,13 @@ setInterval(function() {
                         map1[i] = 0
                         map1[i + 1] = 7
 
-                    }
-                } else if (plrX < i % 50 * 10 && map1[i - 1] != 1) {
+                    } else if (plrX < i % 50 * 10 && map1[i - 1] != 1) {
                     map1[i] = 0
                     map1[i - 1] = 7
 
                 }
             }
-
+}
 
 
 
