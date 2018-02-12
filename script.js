@@ -424,7 +424,7 @@ setInterval(function() {
 
                 }
             }
-}
+
 
 
 
@@ -469,7 +469,7 @@ setInterval(function() {
             }
         }
     
-
+}
     
     
 
