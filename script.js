@@ -217,6 +217,7 @@ var WK = false
 var time = 0
 var animationFrameNo = 0
 var dir = "down"
+var weapon = document.getElementById("weapon")
 var linkUp1 = document.getElementById("linkUp1")
 var linkUp2 = document.getElementById("linkUp2")
 var linkDown1 = document.getElementById("linkDown1")
@@ -230,7 +231,7 @@ var boss = document.getElementById("boss")
 var SK = false
 var sizingVar;
 var walking = false
-
+var weapons = []
 function BOSS(num) {
     if (num == 0) {
         alert("All boss fights contain some information that can be found some way by searching the map, some contain more info than others, in order to beat the boss, you must first learn a few things\n\nThere are 3 cones for this boss fight, you have to connect all three cones to see and then slay the boss\n\nGOOD LUCK!!")
@@ -283,7 +284,77 @@ setInterval(function() {
     if (plrY > 490) {
         plrY = 490
     }
+    for(var i = 0;i<weapons.length;i++){
+        
+        if(weapons[i].spawn == false){
+            weapons[i].spawn = true
+            weapons[i].X = plrX
+            weapons[i].Y = plrY
+        }
+        ctx.drawImage(weapon,weapons[i].X*sizingVar,weapon[i].Y*sizingVar,10*sizingVar,10*sizingVar)
+        if(weapons[i].dir == "up"){
+            weapons[i].Y -= 5
+        }
+        if(weapons[i].dir == "down"){
+            weapons[i].Y += 5
+        }
+        if(weapons[i].dir == "left"){
+            weapons[i].X -= 5
+        }
+        if(weapons[i].dir == "right"){
+            weapons[i].X += 5
+        }
+        for(var v = 0; v<map1.length;v++){
+            if(map1[i] == 1){
+            if (weapon[i].X <= blockX[i] * 10 + 9 && weapon[i].X >= blockX[i] * 10 - 9 && weapon[i].Y >= blockY[i] * 10 - 10 && weapon[i].Y <= blockY[i] * 10 - 5) {
+                weapon[i].X = -10
+                weapon[i].Y = -10
+                weapon[i].dir = ""
+            } else if (weapon[i].X <= blockX[i] * 10 + 9 && weapon[i].X >= blockX[i] * 10 - 9 && blockY[i] * 10 + 10 >= weapon[i].Y && blockY[i] * 10 + 5 <= weapon[i].Y) {
+                weapon[i].X = -10
+                weapon[i].Y = -10
+                weapon[i].dir = ""
+            } else {
 
+                if (weapon[i].X <= blockX[i] * 10 - 5 && weapon[i].X >= blockX[i] * 10 - 10 && weapon[i].Y >= blockY[i] * 10 - 5 && weapon[i].Y <= blockY[i] * 10) {
+                    weapon[i].X = -10
+                weapon[i].Y = -10
+                weapon[i].dir = ""
+                } else if (weapon[i].X <= blockX[i] * 10 + 10 && weapon[i].X >= blockX[i] * 10 + 5 && weapon[i].Y >= blockY[i] * 10 - 5 && weapon[i].Y <= blockY[i] * 10) {
+                    weapon[i].X = -10
+                weapon[i].Y = -10
+                weapon[i].dir = ""
+                } else {}
+            }
+            }
+            if(map1[i] == 7){
+            if (weapon[i].X <= blockX[i] * 10 + 9 && weapon[i].X >= blockX[i] * 10 - 9 && weapon[i].Y >= blockY[i] * 10 - 10 && weapon[i].Y <= blockY[i] * 10 - 5) {
+                weapon[i].X = -10
+                weapon[i].Y = -10
+                weapon[i].dir = ""
+                bossHealth -= 10
+            } else if (weapon[i].X <= blockX[i] * 10 + 9 && weapon[i].X >= blockX[i] * 10 - 9 && blockY[i] * 10 + 10 >= weapon[i].Y && blockY[i] * 10 + 5 <= weapon[i].Y) {
+                weapon[i].X = -10
+                weapon[i].Y = -10
+                weapon[i].dir = ""
+                bossHealth -= 10
+            } else {
+
+                if (weapon[i].X <= blockX[i] * 10 - 5 && weapon[i].X >= blockX[i] * 10 - 10 && weapon[i].Y >= blockY[i] * 10 - 5 && weapon[i].Y <= blockY[i] * 10) {
+                    weapon[i].X = -10
+                weapon[i].Y = -10
+                weapon[i].dir = ""
+                    bossHealth -= 10
+                } else if (weapon[i].X <= blockX[i] * 10 + 10 && weapon[i].X >= blockX[i] * 10 + 5 && weapon[i].Y >= blockY[i] * 10 - 5 && weapon[i].Y <= blockY[i] * 10) {
+                    weapon[i].X = -10
+                weapon[i].Y = -10
+                weapon[i].dir = ""
+                    bossHealth -= 10
+                } else {}
+            }
+            }
+        }
+    }
     for (var i = 0; i < map1.length; i++) {
         if (map1[i] == 1) {
             ctx.fillRect(((i % 50)) * 10 * sizingVar, Math.floor(i / 50) * 10 * sizingVar, 10 * sizingVar, 10 * sizingVar)
@@ -420,7 +491,18 @@ setInterval(function() {
                     }
                 }
                 
-
+                if(bossHealth <= 0){
+                    blue = false
+                    red = false
+                    green = false
+                    AK = false
+                    SK = false
+                    WK = false
+                    DK = false
+                    map1 = m2
+                    alert("You deafeted the boss!\nIn order to see it, you had to get the RED GREEN and BLUE bits, those correspond to the RED GREEN and BLUE varients of cones\nYou could only see all of it with all three\n\n\nNO WONDER COLORS ARE RGB!")
+                    bossHealth = 100
+                }
 
 
 
@@ -531,6 +613,14 @@ document.onkeydown = function(e) {
     if (res == "D" || e.keyCode == 39) {
         DK = true
         walking = true
+    }
+    if(e.keyCode == 32){
+        weapons[weapons.length] = new Object({
+            X : plrX,
+            Y : plrY,
+            spawn : false,
+            dir : dir,
+        })
     }
 }
 document.onkeyup = function(e) {
