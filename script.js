@@ -346,22 +346,38 @@ setInterval(function() {
         if (map1[i] == 8) {
             ctx.font = '8px Press Start 2P'
             
-                ctx.fillText("More info", i % 50 * 10 * sizingVar - 10, Math.floor(i / 50) * 10 * sizingVar - 10)
+                ctx.fillText("More info", i % 50 * 10 * sizingVar - 5*sizingVar, Math.floor(i / 50) * 10 * sizingVar - 10)
             
             ctx.drawImage(oldMan, i % 50 * 10 * sizingVar, Math.floor(i / 50) * 10 * sizingVar, 10 * sizingVar, 10 * sizingVar)
             if (plrX <= blockX[i] * 10 + 9 && plrX >= blockX[i] * 10 - 9 && plrY >= blockY[i] * 10 - 10 && plrY <= blockY[i] * 10 - 5) {
                 alert("Light is being TRANSMITTED through the rods and cones\n\nIt's doing this by turning the light energy into chemical and electrical impuses!")
                 plrX -= 10
+                AK = false
+                    SK = false
+                    WK = false
+                    DK = false
             } else {
                 if (plrX <= blockX[i] * 10 - 5 && plrX >= blockX[i] * 10 - 10 && plrY >= blockY[i] * 10 - 5 && plrY <= blockY[i] * 10) {
                     alert("Light is being TRANSMITTED through the rods and cones\n\nIt's doing this by turning the light energy into chemical and electrical impuses!")
                     plrX -= 10
+                    AK = false
+                    SK = false
+                    WK = false
+                    DK = false
                 } else if (plrX <= blockX[i] * 10 + 10 && plrX >= blockX[i] * 10 + 5 && plrY >= blockY[i] * 10 - 5 && plrY <= blockY[i] * 10) {
                     alert("Light is being TRANSMITTED through the rods and cones\n\nIt's doing this by turning the light energy into chemical and electrical impuses!")
                     plrX -= 10
+                    AK = false
+                    SK = false
+                    WK = false
+                    DK = false
                 } else if (plrX <= blockX[i] * 10 + 5 && plrX >= blockX[i] * 10 - 5 && blockY[i] * 10 + 10 >= plrY && blockY[i] * 10 + 5 <= plrY) {
                     alert("Light is being TRANSMITTED through the rods and cones\n\nIt's doing this by turning the light energy into chemical and electrical impuses!")
                     plrX -= 10
+                    AK = false
+                    SK = false
+                    WK = false
+                    DK = false
                 }
             }
         }
