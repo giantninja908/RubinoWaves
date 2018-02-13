@@ -536,49 +536,49 @@ setInterval(function() {
         }
         for(var v = 0; v<map1.length;v++){
             if(map1[i] == 1){
-            if (weapon[i].X <= blockX[i] * 10 + 9 && weapon[i].X >= blockX[i] * 10 - 9 && weapon[i].Y >= blockY[i] * 10 - 10 && weapon[i].Y <= blockY[i] * 10 - 5) {
-                weapon[i].X = -10
-                weapon[i].Y = -10
-                weapon[i].dir = ""
-            } else if (weapon[i].X <= blockX[i] * 10 + 9 && weapon[i].X >= blockX[i] * 10 - 9 && blockY[i] * 10 + 10 >= weapon[i].Y && blockY[i] * 10 + 5 <= weapon[i].Y) {
-                weapon[i].X = -10
-                weapon[i].Y = -10
-                weapon[i].dir = ""
+            if (weapons[i].X <= blockX[i] * 10 + 9 && weapons[i].X >= blockX[i] * 10 - 9 && weapons[i].Y >= blockY[i] * 10 - 10 && weapons[i].Y <= blockY[i] * 10 - 5) {
+                weapons[i].X = -10
+                weapons[i].Y = -10
+                weapons[i].dir = ""
+            } else if (weapons[i].X <= blockX[i] * 10 + 9 && weapons[i].X >= blockX[i] * 10 - 9 && blockY[i] * 10 + 10 >= weapons[i].Y && blockY[i] * 10 + 5 <= weapons[i].Y) {
+                weapons[i].X = -10
+                weapons[i].Y = -10
+                weapons[i].dir = ""
             } else {
 
-                if (weapon[i].X <= blockX[i] * 10 - 5 && weapon[i].X >= blockX[i] * 10 - 10 && weapon[i].Y >= blockY[i] * 10 - 5 && weapon[i].Y <= blockY[i] * 10) {
-                    weapon[i].X = -10
-                weapon[i].Y = -10
-                weapon[i].dir = ""
-                } else if (weapon[i].X <= blockX[i] * 10 + 10 && weapon[i].X >= blockX[i] * 10 + 5 && weapon[i].Y >= blockY[i] * 10 - 5 && weapon[i].Y <= blockY[i] * 10) {
-                    weapon[i].X = -10
-                weapon[i].Y = -10
-                weapon[i].dir = ""
+                if (weapons[i].X <= blockX[i] * 10 - 5 && weapons[i].X >= blockX[i] * 10 - 10 && weapons[i].Y >= blockY[i] * 10 - 5 && weapons[i].Y <= blockY[i] * 10) {
+                    weapons[i].X = -10
+                weapons[i].Y = -10
+                weapons[i].dir = ""
+                } else if (weapons[i].X <= blockX[i] * 10 + 10 && weapons[i].X >= blockX[i] * 10 + 5 && weapons[i].Y >= blockY[i] * 10 - 5 && weapons[i].Y <= blockY[i] * 10) {
+                    weapons[i].X = -10
+                weapons[i].Y = -10
+                weapons[i].dir = ""
                 } else {}
             }
             }
             if(map1[i] == 7){
-            if (weapon[i].X <= blockX[i] * 10 + 9 && weapon[i].X >= blockX[i] * 10 - 9 && weapon[i].Y >= blockY[i] * 10 - 10 && weapon[i].Y <= blockY[i] * 10 - 5) {
-                weapon[i].X = -10
-                weapon[i].Y = -10
-                weapon[i].dir = ""
+            if (weapons[i].X <= blockX[i] * 10 + 9 && weapons[i].X >= blockX[i] * 10 - 9 && weapons[i].Y >= blockY[i] * 10 - 10 && weapons[i].Y <= blockY[i] * 10 - 5) {
+                weapons[i].X = -10
+                weapons[i].Y = -10
+                weapons[i].dir = ""
                 bossHealth -= 10
-            } else if (weapon[i].X <= blockX[i] * 10 + 9 && weapon[i].X >= blockX[i] * 10 - 9 && blockY[i] * 10 + 10 >= weapon[i].Y && blockY[i] * 10 + 5 <= weapon[i].Y) {
-                weapon[i].X = -10
-                weapon[i].Y = -10
-                weapon[i].dir = ""
+            } else if (weapons[i].X <= blockX[i] * 10 + 9 && weapon[i].X >= blockX[i] * 10 - 9 && blockY[i] * 10 + 10 >= weapon[i].Y && blockY[i] * 10 + 5 <= weapon[i].Y) {
+                weapons[i].X = -10
+                weapons[i].Y = -10
+                weapons[i].dir = ""
                 bossHealth -= 10
             } else {
 
-                if (weapon[i].X <= blockX[i] * 10 - 5 && weapon[i].X >= blockX[i] * 10 - 10 && weapon[i].Y >= blockY[i] * 10 - 5 && weapon[i].Y <= blockY[i] * 10) {
-                    weapon[i].X = -10
-                weapon[i].Y = -10
-                weapon[i].dir = ""
+                if (weapons[i].X <= blockX[i] * 10 - 5 && weapons[i].X >= blockX[i] * 10 - 10 && weapons[i].Y >= blockY[i] * 10 - 5 && weapons[i].Y <= blockY[i] * 10) {
+                    weapons[i].X = -10
+                weapons[i].Y = -10
+                weapons[i].dir = ""
                     bossHealth -= 10
-                } else if (weapon[i].X <= blockX[i] * 10 + 10 && weapon[i].X >= blockX[i] * 10 + 5 && weapon[i].Y >= blockY[i] * 10 - 5 && weapon[i].Y <= blockY[i] * 10) {
-                    weapon[i].X = -10
-                weapon[i].Y = -10
-                weapon[i].dir = ""
+                } else if (weapons[i].X <= blockX[i] * 10 + 10 && weapons[i].X >= blockX[i] * 10 + 5 && weapons[i].Y >= blockY[i] * 10 - 5 && weapons[i].Y <= blockY[i] * 10) {
+                    weapons[i].X = -10
+                weapons[i].Y = -10
+                weapons[i].dir = ""
                     bossHealth -= 10
                 } else {}
             }
