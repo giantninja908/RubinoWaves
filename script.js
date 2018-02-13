@@ -198,7 +198,6 @@ function tutorial() {
                     SK = false
                     WK = false
                     DK = false
-                    map1 = m2
                     alert("In order to see the boss, you had to get the RED GREEN and BLUE bits, those correspond to the RED GREEN and BLUE varients of cones\nYou could only see all of it with all three\n\n\nNO WONDER COLORS ARE RGB!")
                     bossHealth = 100
     }
