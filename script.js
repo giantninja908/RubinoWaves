@@ -3,28 +3,28 @@ var m1 = [
     0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1, 0,
     0, 0, 1, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 0, 0, 0, 1, 0,
     0, 0, 1, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 1, 0,
-    0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 1, 0, 1, 1, 0,
-    0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0,
-    0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 1, 1, 1, 1, 1,
-    0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 1, 0, 0, 0, 1,
-    0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 1, 0, 0, 0, 1,
-    0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 1, 0, 0, 0, 1,
-    0, 0, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 9, 1,
-    0, 0, 0, 1, 0, 1, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 1, 0, 0, 0, 1,
-    0, 0, 0, 1, 0, 1, 1, 1, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 1, 1, 1, 1, 1,
-    0, 2, 0, 1, 0, 1, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0,
-    0, 0, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0,
-    1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0,
-    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0,
-    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-    0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-    0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-    0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-    0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+    0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 0,
+    0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1,12, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0,
+    0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 1, 0, 1, 0, 1, 1, 1, 1, 1,
+    0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1,13, 0, 0, 1, 0, 1, 0, 1, 0, 0, 0, 1,
+    0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 1, 0, 1, 0, 1, 0, 0, 0, 1,
+    0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1,14, 0, 0, 1, 0, 1, 0, 1, 0, 0, 0, 1,
+    0, 0, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 1, 0, 1, 0, 0, 0, 0, 9, 1,
+    0, 0, 0, 1, 0, 1, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1,15, 0, 0, 1, 0, 1, 0, 1, 0, 0, 0, 1,
+    0, 0, 0, 1, 0, 1, 1, 1, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 1, 0, 1, 0, 1, 1, 1, 1, 1,
+    0, 2, 0, 1, 0, 1, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1,16, 0, 0, 1, 0, 1, 0, 1, 0, 0, 0, 0,
+    0, 0, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 1, 0, 1, 0, 1, 0, 0, 0, 0,
+    1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1,17, 0, 0, 1, 0, 1, 0, 1, 0, 0, 0, 0,
+    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 1, 0, 1, 0, 1, 0, 0, 0, 0,
+    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1,18, 0, 0, 1, 0,11, 0, 1, 0, 0, 0, 0,
+    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0,
+    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0,
+    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0,
+    0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0,
+    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0,
+    0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0,
+    0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 19, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0,
+    0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0,
     0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
     0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
     0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
@@ -65,18 +65,18 @@ var m2 = [
     1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
     1, 0, 0, 0, 1, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
     1, 0, 0, 3, 1, 0, 0, 1, 1, 0, 1, 0, 1, 1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-    1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-    1, 0, 0, 0, 1, 0, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-    1, 0, 2, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-    1, 0, 0, 0, 0, 0, 1, 0, 1, 0, 1, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-    1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+    1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0, 1, 1, 1, 0, 1, 0, 1, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+    1, 0, 0, 0, 1, 0, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 1, 0, 0, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+    1, 0, 2, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 1, 0, 1, 1, 1, 0, 1, 0, 1, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+    1, 0, 0, 0, 0, 0, 1, 0, 1, 0, 1, 0, 0, 0, 1, 0, 1, 0, 0, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+    1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 0, 1, 0, 1, 0, 1, 0, 0, 1, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
     0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
     0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-    0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-    0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-    0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-    0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-    0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+    0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 1, 0, 1, 0, 1, 1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+    0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+    0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+    0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+    0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 1, 1, 0, 1, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
     0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
     0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
     0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
@@ -125,11 +125,11 @@ var b1 = [
     1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
     1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
     1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-    1, 0, 0, 0, 7, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-    1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+    1, 0, 0, 0, 7, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1, 0, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+    1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 0, 0, 1, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
     0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
     0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
     0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
@@ -385,14 +385,56 @@ setInterval(function() {
                 }
             }
         }
-        if (map1[i] == 9) {
+        if (map1[i] == 10) {
             ctx.font = '8px Press Start 2P'
             
+                ctx.fillText("More info", i % 50 * 10 * sizingVar - 5*sizingVar, Math.floor(i / 50) * 10 * sizingVar - 10)
+            
+            ctx.drawImage(oldMan, i % 50 * 10 * sizingVar, Math.floor(i / 50) * 10 * sizingVar, 10 * sizingVar, 10 * sizingVar)
+            if (plrX <= blockX[i] * 10 + 9 && plrX >= blockX[i] * 10 - 9 && plrY >= blockY[i] * 10 - 10 && plrY <= blockY[i] * 10 - 5) {
+                alert("Everybody has rods and cones! Roughly 150 million rods, and 7 million cones!")
+                plrX += 10
+                plrY += 10
+                AK = false
+                    SK = false
+                    WK = false
+                    DK = false
+            } else {
+                if (plrX <= blockX[i] * 10 - 5 && plrX >= blockX[i] * 10 - 10 && plrY >= blockY[i] * 10 - 5 && plrY <= blockY[i] * 10) {
+                    alert("Everybody has rods and cones! Roughly 150 million rods, and 7 million cones!")
+                    plrX += 10
+                plrY += 10
+                    AK = false
+                    SK = false
+                    WK = false
+                    DK = false
+                } else if (plrX <= blockX[i] * 10 + 10 && plrX >= blockX[i] * 10 + 5 && plrY >= blockY[i] * 10 - 5 && plrY <= blockY[i] * 10) {
+                    alert("Everybody has rods and cones! Roughly 150 million rods, and 7 million cones!")
+                    plrX += 10
+                plrY += 10
+                    AK = false
+                    SK = false
+                    WK = false
+                    DK = false
+                } else if (plrX <= blockX[i] * 10 + 5 && plrX >= blockX[i] * 10 - 5 && blockY[i] * 10 + 10 >= plrY && blockY[i] * 10 + 5 <= plrY) {
+                    alert("Everybody has rods and cones! Roughly 150 million rods, and 7 million cones!")
+                    plrX += 10
+                plrY += 10
+                    AK = false
+                    SK = false
+                    WK = false
+                    DK = false
+                }
+            }
+        }
+        if (map1[i] == 11) {
+            ctx.font = '8px Press Start 2P'
+            var text = "Cones can see more fine detail than rods\n\nWith cones, you can see EVEN MORE detail"
                 ctx.fillText("MORE info", i % 50 * 10 * sizingVar - 5*sizingVar, Math.floor(i / 50) * 10 * sizingVar - 10)
             
             ctx.drawImage(oldMan, i % 50 * 10 * sizingVar, Math.floor(i / 50) * 10 * sizingVar, 10 * sizingVar, 10 * sizingVar)
             if (plrX <= blockX[i] * 10 + 9 && plrX >= blockX[i] * 10 - 9 && plrY >= blockY[i] * 10 - 10 && plrY <= blockY[i] * 10 - 5) {
-                alert("Rods are different than cones, they ")
+                alert(text)
                 plrX -= 10
                 AK = false
                     SK = false
@@ -400,21 +442,363 @@ setInterval(function() {
                     DK = false
             } else {
                 if (plrX <= blockX[i] * 10 - 5 && plrX >= blockX[i] * 10 - 10 && plrY >= blockY[i] * 10 - 5 && plrY <= blockY[i] * 10) {
-                    alert("Light is being TRANSMITTED through the rods and cones\n\nIt's doing this by turning the light energy into chemical and electrical impuses!")
+                    alert(text)
                     plrX -= 10
                     AK = false
                     SK = false
                     WK = false
                     DK = false
                 } else if (plrX <= blockX[i] * 10 + 10 && plrX >= blockX[i] * 10 + 5 && plrY >= blockY[i] * 10 - 5 && plrY <= blockY[i] * 10) {
-                    alert("Light is being TRANSMITTED through the rods and cones\n\nIt's doing this by turning the light energy into chemical and electrical impuses!")
+                    alert(text)
                     plrX -= 10
                     AK = false
                     SK = false
                     WK = false
                     DK = false
                 } else if (plrX <= blockX[i] * 10 + 5 && plrX >= blockX[i] * 10 - 5 && blockY[i] * 10 + 10 >= plrY && blockY[i] * 10 + 5 <= plrY) {
-                    alert("Light is being TRANSMITTED through the rods and cones\n\nIt's doing this by turning the light energy into chemical and electrical impuses!")
+                    alert(text)
+                    plrX -= 10
+                    AK = false
+                    SK = false
+                    WK = false
+                    DK = false
+                }
+            }
+        }
+        if (map1[i] == 12) {
+            ctx.font = '8px Press Start 2P'
+            var text = "The amount of pixels that the human eye can see at any given moment is over 576 megapixels\nTHAT'S 567,000,000 PIXELS!!!\n\nTHAT'S SOME HHD (human high definition)\nISN'T THAT AMAZING!"
+                ctx.fillText("MORE info", i % 50 * 10 * sizingVar - 5*sizingVar, Math.floor(i / 50) * 10 * sizingVar - 10)
+            
+            ctx.drawImage(oldMan, i % 50 * 10 * sizingVar, Math.floor(i / 50) * 10 * sizingVar, 10 * sizingVar, 10 * sizingVar)
+            if (plrX <= blockX[i] * 10 + 9 && plrX >= blockX[i] * 10 - 9 && plrY >= blockY[i] * 10 - 10 && plrY <= blockY[i] * 10 - 5) {
+                alert(text)
+                plrX += 10
+                AK = false
+                    SK = false
+                    WK = false
+                    DK = false
+            } else {
+                if (plrX <= blockX[i] * 10 - 5 && plrX >= blockX[i] * 10 - 10 && plrY >= blockY[i] * 10 - 5 && plrY <= blockY[i] * 10) {
+                    alert(text)
+                    plrX += 10
+                    AK = false
+                    SK = false
+                    WK = false
+                    DK = false
+                } else if (plrX <= blockX[i] * 10 + 10 && plrX >= blockX[i] * 10 + 5 && plrY >= blockY[i] * 10 - 5 && plrY <= blockY[i] * 10) {
+                    alert(text)
+                    plrX += 10
+                    AK = false
+                    SK = false
+                    WK = false
+                    DK = false
+                } else if (plrX <= blockX[i] * 10 + 5 && plrX >= blockX[i] * 10 - 5 && blockY[i] * 10 + 10 >= plrY && blockY[i] * 10 + 5 <= plrY) {
+                    alert(text)
+                    plrX += 10
+                    AK = false
+                    SK = false
+                    WK = false
+                    DK = false
+                }
+            }
+        }
+        if (map1[i] == 13) {
+            ctx.font = '8px Press Start 2P'
+            var text = "Where cones are found more at the central retina, rods can be found more at the outer rim of the retina"
+                ctx.fillText("MORE info", i % 50 * 10 * sizingVar - 5*sizingVar, Math.floor(i / 50) * 10 * sizingVar - 10)
+            
+            ctx.drawImage(oldMan, i % 50 * 10 * sizingVar, Math.floor(i / 50) * 10 * sizingVar, 10 * sizingVar, 10 * sizingVar)
+            if (plrX <= blockX[i] * 10 + 9 && plrX >= blockX[i] * 10 - 9 && plrY >= blockY[i] * 10 - 10 && plrY <= blockY[i] * 10 - 5) {
+                alert(text)
+                plrX += 10
+                AK = false
+                    SK = false
+                    WK = false
+                    DK = false
+            } else {
+                if (plrX <= blockX[i] * 10 - 5 && plrX >= blockX[i] * 10 - 10 && plrY >= blockY[i] * 10 - 5 && plrY <= blockY[i] * 10) {
+                    alert(text)
+                    plrX += 10
+                    AK = false
+                    SK = false
+                    WK = false
+                    DK = false
+                } else if (plrX <= blockX[i] * 10 + 10 && plrX >= blockX[i] * 10 + 5 && plrY >= blockY[i] * 10 - 5 && plrY <= blockY[i] * 10) {
+                    alert(text)
+                    plrX += 10
+                    AK = false
+                    SK = false
+                    WK = false
+                    DK = false
+                } else if (plrX <= blockX[i] * 10 + 5 && plrX >= blockX[i] * 10 - 5 && blockY[i] * 10 + 10 >= plrY && blockY[i] * 10 + 5 <= plrY) {
+                    alert(text)
+                    plrX += 10
+                    AK = false
+                    SK = false
+                    WK = false
+                    DK = false
+                }
+            }
+        }
+        if (map1[i] == 14) {
+            ctx.font = '8px Press Start 2P'
+            var text = "Did you know?\nNoctunal animals have the most rods than any other type of creature"
+                ctx.fillText("MORE info", i % 50 * 10 * sizingVar - 5*sizingVar, Math.floor(i / 50) * 10 * sizingVar - 10)
+            
+            ctx.drawImage(oldMan, i % 50 * 10 * sizingVar, Math.floor(i / 50) * 10 * sizingVar, 10 * sizingVar, 10 * sizingVar)
+            if (plrX <= blockX[i] * 10 + 9 && plrX >= blockX[i] * 10 - 9 && plrY >= blockY[i] * 10 - 10 && plrY <= blockY[i] * 10 - 5) {
+                alert(text)
+                plrX += 10
+                AK = false
+                    SK = false
+                    WK = false
+                    DK = false
+            } else {
+                if (plrX <= blockX[i] * 10 - 5 && plrX >= blockX[i] * 10 - 10 && plrY >= blockY[i] * 10 - 5 && plrY <= blockY[i] * 10) {
+                    alert(text)
+                    plrX += 10
+                    AK = false
+                    SK = false
+                    WK = false
+                    DK = false
+                } else if (plrX <= blockX[i] * 10 + 10 && plrX >= blockX[i] * 10 + 5 && plrY >= blockY[i] * 10 - 5 && plrY <= blockY[i] * 10) {
+                    alert(text)
+                    plrX += 10
+                    AK = false
+                    SK = false
+                    WK = false
+                    DK = false
+                } else if (plrX <= blockX[i] * 10 + 5 && plrX >= blockX[i] * 10 - 5 && blockY[i] * 10 + 10 >= plrY && blockY[i] * 10 + 5 <= plrY) {
+                    alert(text)
+                    plrX += 10
+                    AK = false
+                    SK = false
+                    WK = false
+                    DK = false
+                }
+            }
+        }
+        if (map1[i] == 15) {
+            ctx.font = '8px Press Start 2P'
+            var text = "Cones are less sensitive in the dark. Where as rods are better in the dark\nTHat's why it's hard to see in the dark!"
+                ctx.fillText("MORE info", i % 50 * 10 * sizingVar - 5*sizingVar, Math.floor(i / 50) * 10 * sizingVar - 10)
+            
+            ctx.drawImage(oldMan, i % 50 * 10 * sizingVar, Math.floor(i / 50) * 10 * sizingVar, 10 * sizingVar, 10 * sizingVar)
+            if (plrX <= blockX[i] * 10 + 9 && plrX >= blockX[i] * 10 - 9 && plrY >= blockY[i] * 10 - 10 && plrY <= blockY[i] * 10 - 5) {
+                alert(text)
+                plrX += 10
+                AK = false
+                    SK = false
+                    WK = false
+                    DK = false
+            } else {
+                if (plrX <= blockX[i] * 10 - 5 && plrX >= blockX[i] * 10 - 10 && plrY >= blockY[i] * 10 - 5 && plrY <= blockY[i] * 10) {
+                    alert(text)
+                    plrX += 10
+                    AK = false
+                    SK = false
+                    WK = false
+                    DK = false
+                } else if (plrX <= blockX[i] * 10 + 10 && plrX >= blockX[i] * 10 + 5 && plrY >= blockY[i] * 10 - 5 && plrY <= blockY[i] * 10) {
+                    alert(text)
+                    plrX += 10
+                    AK = false
+                    SK = false
+                    WK = false
+                    DK = false
+                } else if (plrX <= blockX[i] * 10 + 5 && plrX >= blockX[i] * 10 - 5 && blockY[i] * 10 + 10 >= plrY && blockY[i] * 10 + 5 <= plrY) {
+                    alert(text)
+                    plrX += 10
+                    AK = false
+                    SK = false
+                    WK = false
+                    DK = false
+                }
+            }
+        }
+        if (map1[i] == 16) {
+            ctx.font = '8px Press Start 2P'
+            var text = "Nerve fibers from the cones and rods are combined into the optic nerve where they are then transmitted to the optic nerve"
+                ctx.fillText("MORE info", i % 50 * 10 * sizingVar - 5*sizingVar, Math.floor(i / 50) * 10 * sizingVar - 10)
+            
+            ctx.drawImage(oldMan, i % 50 * 10 * sizingVar, Math.floor(i / 50) * 10 * sizingVar, 10 * sizingVar, 10 * sizingVar)
+            if (plrX <= blockX[i] * 10 + 9 && plrX >= blockX[i] * 10 - 9 && plrY >= blockY[i] * 10 - 10 && plrY <= blockY[i] * 10 - 5) {
+                alert(text)
+                plrX += 10
+                AK = false
+                    SK = false
+                    WK = false
+                    DK = false
+            } else {
+                if (plrX <= blockX[i] * 10 - 5 && plrX >= blockX[i] * 10 - 10 && plrY >= blockY[i] * 10 - 5 && plrY <= blockY[i] * 10) {
+                    alert(text)
+                    plrX += 10
+                    AK = false
+                    SK = false
+                    WK = false
+                    DK = false
+                } else if (plrX <= blockX[i] * 10 + 10 && plrX >= blockX[i] * 10 + 5 && plrY >= blockY[i] * 10 - 5 && plrY <= blockY[i] * 10) {
+                    alert(text)
+                    plrX += 10
+                    AK = false
+                    SK = false
+                    WK = false
+                    DK = false
+                } else if (plrX <= blockX[i] * 10 + 5 && plrX >= blockX[i] * 10 - 5 && blockY[i] * 10 + 10 >= plrY && blockY[i] * 10 + 5 <= plrY) {
+                    alert(text)
+                    plrX += 10
+                    AK = false
+                    SK = false
+                    WK = false
+                    DK = false
+                }
+            }
+        }
+        if (map1[i] == 17) {
+            ctx.font = '8px Press Start 2P'
+            var text = "The optic nerve acts like an electrical wire, sending signals to the brain!"
+                ctx.fillText("MORE info", i % 50 * 10 * sizingVar - 5*sizingVar, Math.floor(i / 50) * 10 * sizingVar - 10)
+            
+            ctx.drawImage(oldMan, i % 50 * 10 * sizingVar, Math.floor(i / 50) * 10 * sizingVar, 10 * sizingVar, 10 * sizingVar)
+            if (plrX <= blockX[i] * 10 + 9 && plrX >= blockX[i] * 10 - 9 && plrY >= blockY[i] * 10 - 10 && plrY <= blockY[i] * 10 - 5) {
+                alert(text)
+                plrX += 10
+                AK = false
+                    SK = false
+                    WK = false
+                    DK = false
+            } else {
+                if (plrX <= blockX[i] * 10 - 5 && plrX >= blockX[i] * 10 - 10 && plrY >= blockY[i] * 10 - 5 && plrY <= blockY[i] * 10) {
+                    alert(text)
+                    plrX += 10
+                    AK = false
+                    SK = false
+                    WK = false
+                    DK = false
+                } else if (plrX <= blockX[i] * 10 + 10 && plrX >= blockX[i] * 10 + 5 && plrY >= blockY[i] * 10 - 5 && plrY <= blockY[i] * 10) {
+                    alert(text)
+                    plrX += 10
+                    AK = false
+                    SK = false
+                    WK = false
+                    DK = false
+                } else if (plrX <= blockX[i] * 10 + 5 && plrX >= blockX[i] * 10 - 5 && blockY[i] * 10 + 10 >= plrY && blockY[i] * 10 + 5 <= plrY) {
+                    alert(text)
+                    plrX += 10
+                    AK = false
+                    SK = false
+                    WK = false
+                    DK = false
+                }
+            }
+        }
+        if (map1[i] == 18) {
+            ctx.font = '8px Press Start 2P'
+            var text = "All of the rods and cones combined make you see the size, shape and brightness of a given object."
+                ctx.fillText("MORE info", i % 50 * 10 * sizingVar - 5*sizingVar, Math.floor(i / 50) * 10 * sizingVar - 10)
+            
+            ctx.drawImage(oldMan, i % 50 * 10 * sizingVar, Math.floor(i / 50) * 10 * sizingVar, 10 * sizingVar, 10 * sizingVar)
+            if (plrX <= blockX[i] * 10 + 9 && plrX >= blockX[i] * 10 - 9 && plrY >= blockY[i] * 10 - 10 && plrY <= blockY[i] * 10 - 5) {
+                alert(text)
+                plrX += 10
+                AK = false
+                    SK = false
+                    WK = false
+                    DK = false
+            } else {
+                if (plrX <= blockX[i] * 10 - 5 && plrX >= blockX[i] * 10 - 10 && plrY >= blockY[i] * 10 - 5 && plrY <= blockY[i] * 10) {
+                    alert(text)
+                    plrX += 10
+                    AK = false
+                    SK = false
+                    WK = false
+                    DK = false
+                } else if (plrX <= blockX[i] * 10 + 10 && plrX >= blockX[i] * 10 + 5 && plrY >= blockY[i] * 10 - 5 && plrY <= blockY[i] * 10) {
+                    alert(text)
+                    plrX += 10
+                    AK = false
+                    SK = false
+                    WK = false
+                    DK = false
+                } else if (plrX <= blockX[i] * 10 + 5 && plrX >= blockX[i] * 10 - 5 && blockY[i] * 10 + 10 >= plrY && blockY[i] * 10 + 5 <= plrY) {
+                    alert(text)
+                    plrX += 10
+                    AK = false
+                    SK = false
+                    WK = false
+                    DK = false
+                }
+            }
+        }
+        if (map1[i] == 19) {
+            ctx.font = '8px Press Start 2P'
+            var text = "Thank you for playing my presentation!"
+                ctx.fillText("MORE info", i % 50 * 10 * sizingVar - 5*sizingVar, Math.floor(i / 50) * 10 * sizingVar - 10)
+            
+            ctx.drawImage(oldMan, i % 50 * 10 * sizingVar, Math.floor(i / 50) * 10 * sizingVar, 10 * sizingVar, 10 * sizingVar)
+            if (plrX <= blockX[i] * 10 + 9 && plrX >= blockX[i] * 10 - 9 && plrY >= blockY[i] * 10 - 10 && plrY <= blockY[i] * 10 - 5) {
+                alert(text)
+                plrX += 10
+                AK = false
+                    SK = false
+                    WK = false
+                    DK = false
+            } else {
+                if (plrX <= blockX[i] * 10 - 5 && plrX >= blockX[i] * 10 - 10 && plrY >= blockY[i] * 10 - 5 && plrY <= blockY[i] * 10) {
+                    alert(text)
+                    plrX += 10
+                    AK = false
+                    SK = false
+                    WK = false
+                    DK = false
+                } else if (plrX <= blockX[i] * 10 + 10 && plrX >= blockX[i] * 10 + 5 && plrY >= blockY[i] * 10 - 5 && plrY <= blockY[i] * 10) {
+                    alert(text)
+                    plrX += 10
+                    AK = false
+                    SK = false
+                    WK = false
+                    DK = false
+                } else if (plrX <= blockX[i] * 10 + 5 && plrX >= blockX[i] * 10 - 5 && blockY[i] * 10 + 10 >= plrY && blockY[i] * 10 + 5 <= plrY) {
+                    alert(text)
+                    plrX += 10
+                    AK = false
+                    SK = false
+                    WK = false
+                    DK = false
+                }
+            }
+        }
+        if (map1[i] == 9) {
+            ctx.font = '8px Press Start 2P'
+            
+                ctx.fillText("MORE info", i % 50 * 10 * sizingVar - 5*sizingVar, Math.floor(i / 50) * 10 * sizingVar - 10)
+            
+            ctx.drawImage(oldMan, i % 50 * 10 * sizingVar, Math.floor(i / 50) * 10 * sizingVar, 10 * sizingVar, 10 * sizingVar)
+            if (plrX <= blockX[i] * 10 + 9 && plrX >= blockX[i] * 10 - 9 && plrY >= blockY[i] * 10 - 10 && plrY <= blockY[i] * 10 - 5) {
+                alert("Rods are different than cones, they show black and white better than color, and unlike cones, they can detect brightness of an object.")
+                plrX -= 10
+                AK = false
+                    SK = false
+                    WK = false
+                    DK = false
+            } else {
+                if (plrX <= blockX[i] * 10 - 5 && plrX >= blockX[i] * 10 - 10 && plrY >= blockY[i] * 10 - 5 && plrY <= blockY[i] * 10) {
+                    alert("Rods are different than cones, they show black and white better than color, and unlike cones, they can detect brightness of an object.")
+                    plrX -= 10
+                    AK = false
+                    SK = false
+                    WK = false
+                    DK = false
+                } else if (plrX <= blockX[i] * 10 + 10 && plrX >= blockX[i] * 10 + 5 && plrY >= blockY[i] * 10 - 5 && plrY <= blockY[i] * 10) {
+                    alert("Rods are different than cones, they show black and white better than color, and unlike cones, they can detect brightness of an object.")
+                    plrX -= 10
+                    AK = false
+                    SK = false
+                    WK = false
+                    DK = false
+                } else if (plrX <= blockX[i] * 10 + 5 && plrX >= blockX[i] * 10 - 5 && blockY[i] * 10 + 10 >= plrY && blockY[i] * 10 + 5 <= plrY) {
+                    alert("Rods are different than cones, they show black and white better than color, and unlike cones, they can detect brightness of an object.")
                     plrX -= 10
                     AK = false
                     SK = false
