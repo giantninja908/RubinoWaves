@@ -156,6 +156,8 @@ var b1 = [
 ]
 var mapNum = 1
 map1 = m1
+
+alert("How to play:\nUse WASD keys to move\nGo Talk to the old man!");
 var arrow_keys_handler = function(e) {
     e = e || window.event
     switch (e.keyCode) {
